@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+      
+    <!-- stylesheet templates -->
+    <link rel="stylesheet" href="/javascript/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/javascript/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/javascript/fonts-font-awesome/css/font-awesome.min.css" />
+      
+    <!-- application stylesheet -->
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- google map application stylesheet -->
+    <link rel="stylesheet" href="css/maps-googlestyle.css">
+     
+    <!-- JavaScript libraries -->
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?client=gme-optimationcloudservices&sensor=false&libraries=places,visualization">
+    </script>
+    <script src="/javascript/jquery/jquery.min.js"></script>
+    <script src="/javascript/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/mustache.js"></script>
+    <script src="lib/moment.min.js"></script>
+    <script src="lib/numeral.min.js"></script>
+    <!--<script src="lib/OverlappingMarkerSpiderfier.js"></script>-->
+
+    <!-- application Javascript -->
+    <script src="js/popupTemplate.js"></script>
+    <script src="js/gme-data.js"></script>
+    <script src="js/gme-auth.js"></script>
+    <script src="js/map.js"></script>
+      
+    <script type="text/javascript" src="https://apis.google.com/js/client.js?onload=gmeAuthInitialize"></script>
+  </head>
+  <body>
+    <input id="pac-input" class="controls" type="text" placeholder="Place Search...">
+    <input type="button" value="Authorize" id="authorize_button" style="display: none;"></input>
+    <img id="logo" src="img/barbador-logo.png">
+    <div id="map-canvas"/>
+    <div id="legend" class="legend control-right control-bottom">
+        <i style="background: #f46b65; opacity: 0.29"></i> Building &amp; Contents<br>
+        <i style="background: #7fbcff; opacity: 0.29"></i> Building<br>
+        <i style="background: #a2ff90; opacity: 0.29"></i> Contents<br>
+        <i style="background: #c69c61; opacity: 0.29"></i> Landlords<br>
+    </div>
+  </body>
+</html>

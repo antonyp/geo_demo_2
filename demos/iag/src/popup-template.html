@@ -1,0 +1,110 @@
+<!--<div class="sprite callout" style="visibility: inherit; opacity: 1; -webkit-transform: translate3d(0px, 0px, 1px);">-->
+<div class="">
+    <header class="info-header {{type-class}}"><i class="fa fa-{{fa-type}}"></i> {{type}}</header>
+    <div class="inner info-popup">
+        <div class="row">
+            <div class="left-box info-box">
+                <span class="key">Building</span>
+                <br>
+                <span class="big-icon fa-stack fa-3x" style="font-size: 30px;">
+                    <i class="info-icon fa fa-square fa-stack-2x {{building-color}}"></i>
+                    <i class="info-icon fa fa-home fa-stack-1x fa-inverse"></i>
+                </span>
+                <br>
+                <p>
+                <!--<span class="box-label">Insured Sum:</span><br>-->
+                <span class="box-label insured-sum" rel="tooltip" style="cursor:pointer" data-toggle="tooltip" data-placement="right" title="Building Insured Sum">{{BuildingSumInsured}}</span>
+                    </p>
+                <p>
+                    <span class="box-label">This Year Premium:</span><br>
+                    <span class="box-label">{{ThisYearBldgPremium}}</span>
+                </p>
+                <p>
+                    <span class="box-label">Last 5 Years Premium:</span><br>
+                    <span class="box-label">{{Last5YearsBldgPremium}}</span>
+                </p>
+                
+                <p>
+                    <span class="box-label">Number of Terms:</span><br>
+                    <span class="box-label">{{NumberBuildingsTerms}}</span>
+                </p>
+                
+                <p>
+                    <span class="box-label">Recent Claim:</span><br>
+                    <span class="box-label">{{RecentBuildingClaim}} / {{RecentBuildingClaimCost}}</span>
+                </p>
+            </div>
+            <div class="right-box info-box">
+                <span class="key">Contents</span>
+                <br>
+                <span class="big-icon fa-stack fa-3x" style="font-size: 30px;">
+                    <i class="info-icon fa fa-square fa-stack-2x {{contents-color}}"></i>
+                    <i class="info-icon fa fa-suitcase fa-stack-1x fa-inverse"></i>
+                </span>
+                <br>
+                <p>
+                    <!--<span class="box-label">Insured Sum:</span><br>-->
+                    <span class="box-label insured-sum" rel="tooltip" style="cursor:pointer" data-toggle="tooltip" data-placement="right" title="Contents Insured Sum">{{ContentsSumInsured}}</span>
+                </p>
+                
+                <p>
+                    <span class="box-label">This Year Premium:</span><br>
+                    <span class="box-label">{{ThisYearContPremium}}</span>
+                </p>
+                
+                <p>
+                    <span class="box-label">Last 5 Years Premium:</span><br>
+                    <span class="box-label">{{Last5YearsContPremium}}</span>
+                </p>
+                
+                <p>
+                    <span class="box-label">Number of Terms:</span><br>
+                    <span class="box-label">{{NumberContentsTerms}}</span>
+                </p>
+                
+                <p>
+                    <span class="box-label">Recent Claim:</span><br>
+                    <span class="box-label">{{RecentContentsClaim}} / {{RecentContentsClaimCost}}</span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <table class="table table-condensed table-striped">
+                <tbody>
+                    <tr>
+                        <td class="key">Year of Construction</td>
+                        <td>{{YearOfConstruction}}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="key">Number of Dwellings</td>
+                        <td>{{Number_of_Dwellings}}</td>
+                    </tr>
+
+                    <tr>
+                        <td class="key">Size of Dwelling</td>
+                        <td>{{SizeOfDwlling}}</td>
+                    </tr>
+
+                    <tr>
+                        <td class="key">Size of Garage</td>
+                        <td>{{SizeOfGarage}}</td>
+                    </tr>
+
+                    <tr>
+                        <td class="key">Age of oldest policy holder</td>
+                        <td>{{AgeOfOldestPolicyHolder}}</td>
+                    </tr>
+
+                    <tr>
+                        <td class="key">At risk of flood</td>
+                        <td>{{AtRiskOfFlood}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="subscribe">
+            <span><a href="#">More details</a></span>
+        </div>
+    </div>
+</div>
