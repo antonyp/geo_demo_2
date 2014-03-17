@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/javascript/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/javascript/bootstrap/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="/javascript/fonts-font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="lib/datepicker/css/datepicker3.css" />
       
     <!-- application stylesheet -->
     <link rel="stylesheet" href="css/app.css">
@@ -16,18 +17,20 @@
      
     <!-- JavaScript libraries -->
     <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?client=gme-optimationcloudservices&sensor=false&libraries=places,visualization">
+      src="https://maps.googleapis.com/maps/api/js?client=gme-optimationcloudservices&sensor=false&libraries=places,visualization,drawing">
     </script>
     <script src="/javascript/jquery/jquery.min.js"></script>
     <script src="/javascript/bootstrap/js/bootstrap.min.js"></script>
     <script src="lib/mustache.js"></script>
     <script src="lib/moment.min.js"></script>
     <script src="lib/numeral.min.js"></script>
+    <script src="lib/Chart.min.js"></script>
+    <script src="lib/google.maps.Polygon.getBounds.js"></script>
+    <script src="lib/datepicker/js/bootstrap-datepicker.js"></script>
     <!--<script src="lib/OverlappingMarkerSpiderfier.js"></script>-->
 
     <!-- application Javascript -->
-    <script src="js/popupTemplate.js"></script>
-    <script src="js/gme-data.js"></script>
+    <script src="js/templateStrings.js"></script>
     <script src="js/gme-auth.js"></script>
     <script src="js/map.js"></script>
       
@@ -36,13 +39,22 @@
   <body>
     <input id="pac-input" class="controls" type="text" placeholder="Place Search...">
     <input type="button" value="Authorize" id="authorize_button" style="display: none;"></input>
-    <img id="logo" src="img/barbador-logo.png">
-    <div id="map-canvas"/>
+    <img id="logo" src="img/optimation-logo.gif">
+    <div id="layer-panel">
+      <input type="checkbox" class="checkbox_style" id="layer_urp" onClick="toggleGMELayer(0)"><label for="layer_urp" class="checkbox_label"> Usually Resident Population</label><br>
+      <input type="checkbox" class="checkbox_style" id="layer_parcels" onClick="toggleGMELayer(1)"><label for="layer_parcels" class="checkbox_label"> Property Parcels</label><br>
+      <input type="checkbox" class="checkbox_style" id="layer_ece" onClick="toggleGMELayer(2)"><label for="layer_ece" class="checkbox_label"> Early Childhood Centers</label><br>
+      <input type="checkbox" class="checkbox_style" id="layer_planning" onClick=""><label for="layer_planning" class="checkbox_label"> Local Planning Zones</label><br>
+    </div>
+    <a href=""><img id="earth-logo" src="img/google-earth.jpg"></a>
+    <!--
     <div id="legend" class="legend control-right control-bottom">
         <i style="background: #f46b65; opacity: 0.29"></i> Building &amp; Contents<br>
         <i style="background: #7fbcff; opacity: 0.29"></i> Building<br>
         <i style="background: #a2ff90; opacity: 0.29"></i> Contents<br>
         <i style="background: #c69c61; opacity: 0.29"></i> Landlords<br>
     </div>
+    -->
+    <div id="map-canvas"/>
   </body>
 </html>

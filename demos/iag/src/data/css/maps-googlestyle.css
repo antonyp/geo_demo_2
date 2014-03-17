@@ -1,0 +1,332 @@
+.sprite {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+}
+.callout {
+    background: #fff !important;
+    overflow: visible !important;
+    width: 195px;
+    position: absolute;
+    z-index: 99;
+    opacity: 0;
+    font-weight: 300;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.callout header {
+    background: #d5d5d5;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    color: #3b3b3b;
+    border-radius: 5px 5px 0 0;
+}
+.callout .inner {
+    padding: 20px;
+    color: #666;
+}
+.callout .inner .stats {
+    list-style: none;
+    margin: -5px 0;
+    padding: 0;
+}
+.callout .inner .stats .value {
+    padding: 0;
+}
+.callout .inner .update-title {
+    margin-bottom: 10px;
+    display: block;
+}
+.callout .inner a {
+    text-decoration: none;
+    margin: 15px 0 -10px 0;
+    font-weight: bold;
+    display: block;
+    color: #056cca;
+}
+.callout .inner p {
+    margin: 0;
+}
+.callout .inner p .fakelink {
+    font-weight: 400;
+    color: #044d9d;
+}
+.callout .inner p span {
+    font-weight: 400;
+    position: relative !important;
+}
+.callout:after,
+.callout:before {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -13px;
+    margin-top: -1px;
+    content: "";
+    border-width: 13px 13px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+.callout:before {
+    margin-top: 0px;
+    border-color: #ccc transparent transparent transparent;
+}
+.callout.arrow_left:before,
+.callout.arrow_left:after,
+.callout.arrow_right:before,
+.callout.arrow_right:after {
+    top: 20px;
+}
+.callout.arrow_left.tooltip .inner:after,
+.callout.arrow_right.tooltip .inner:after {
+    position: absolute;
+    top: 10px;
+    left: auto;
+    right: auto;
+    width: 36px;
+    height: 36px;
+    content: "";
+}
+.callout.arrow_left.tooltip .inner *,
+.callout.arrow_right.tooltip .inner * {
+    pointer-events: none;
+}
+.callout.arrow_left:before,
+.callout.arrow_left:after {
+    left: -25px;
+}
+.callout.arrow_left:before {
+    left: -1px;
+    margin-top: -1px;
+    border-color: transparent #ccc transparent transparent;
+}
+.callout.arrow_left:after {
+    left: 0;
+    border-color: transparent #fff transparent transparent;
+}
+.callout.arrow_left.tooltip .inner:after {
+    left: -36px;
+}
+.callout.arrow_right:before,
+.callout.arrow_right:after {
+    left: auto;
+}
+.callout.arrow_right:before {
+    right: -18px;
+    margin-top: -1px;
+    border-color: transparent transparent transparent #ccc;
+}
+.callout.arrow_right:after {
+    right: -17px;
+    border-color: transparent transparent transparent #fff;
+}
+.callout.arrow_right.tooltip .inner:after {
+    right: -36px;
+}
+.callout.tooltip {
+    border-radius: 0;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.1);
+}
+.callout.tooltip .inner {
+    background: transparent none;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    line-height: 1.4em;
+    color: #222;
+    padding: 20px;
+}
+.callout.tooltip .inner a,
+.callout.tooltip .inner span.click-to-advance {
+    pointer-events: none;
+    font-weight: 600;
+    margin: 13px 0 0 0;
+    display: block;
+    font-size: 12px;
+    color: #0851cf;
+}
+.callout.tooltip .inner p {
+    margin: 0;
+    padding: 0;
+    line-height: 15px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #5e5e5e;
+}
+.callout.tooltip:before,
+.callout.tooltip:after {
+    border-width: 9px 9px;
+}
+.callout.tooltip.arrow_left:before,
+.callout.tooltip.arrow_left:after {
+    margin-left: -17px;
+}
+.callout.tooltip.arrow_right {
+    width: 220px;
+}
+.callout.gray {
+    width: 216px;
+}
+.callout.gray header {
+    color: #fff;
+    background-color: #64696c;
+}
+.callout.gray .inner {
+    background-color: #a8a8a8;
+    color: #fff;
+    border-radius: 0 0 5px 5px;
+}
+.callout.gray:before,
+.callout.gray:after {
+    border-color: #a8a8a8 transparent transparent transparent;
+}
+.click-to-advance {
+    cursor: pointer;
+}
+.controls {
+    margin-top: 16px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+#pac-input {
+    background-color: #fff;
+    padding: 0 11px 0 13px;
+    width: 400px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    text-overflow: ellipsis;
+}
+#pac-input:focus {
+    border-color: #4d90fe;
+    margin-left: -1px;
+    padding-left: 14px;
+    /* Regular padding-left + 1. */
+    width: 401px;
+}
+.pac-container {
+    font-family: Roboto;
+}
+/* control panel */
+
+#panel {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    z-index: 5;
+    padding: 5px;
+    /*
+background-color: #fff;
+border: 1px solid #999;
+  */
+}
+
+/* legend */
+
+.control-top {
+    top: 0px;
+    margin-top: 10px;
+}
+.control-bottom {
+    bottom: 0px;
+    margin-bottom: 30px;
+}
+.control-right {
+    right: 0px;
+    margin-right: 10px;
+}
+.control-left {
+    left: 0px;
+    margin-left: 10px;
+}
+.legend {
+    text-align: left;
+    line-height: 18px;
+    color: #555;
+    float: right;
+    position: absolute;
+    z-index: 1000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+}
+.legend i {
+    width: 24px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+/* custom popup */
+.info-popup {
+    /*line-height: 1.0;*/
+}
+
+.info-header {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* graphic info-box */
+.info-popup .info-box {
+    text-align: center;
+    padding: 10px;
+}
+
+/* put one box on the left and one on the right */
+.info-popup .left-box {
+    width: 50%;
+    float: left;
+}
+.info-popup .right-box {
+    width: 50%;
+    float: right;
+}
+
+/* text-value for the info-box's */
+.info-popup .box-label {
+    font-weight: bold;
+    font-size: 125%;
+}
+
+/* fix positioning of icons */
+.info-popup .info-icon {
+    left: 0;
+}
+
+/* properties table */
+.info-popup .key {
+    font-weight: bold;
+}
+.info-popup .key:after {
+    content: ": ";
+}
+
+.info-popup .subscribe {
+    text-align: center;
+}
+
+.big-icon {
+    font-size: 30px;
+}
+
+.insured-sum {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 125%;
+}
