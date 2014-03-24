@@ -1,41 +1,42 @@
-html { height: 100% }
-body { height: 100%; margin: 0; padding: 0 }
-#map-canvas { height: 100% }
-
+html {
+    height: 100%
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+#map-canvas {
+    height: 100%
+}
 .info-popup h4 {
     text-align: center;
     font-weight: bold;
 }
-
 /* properties table */
+
 .info-popup .key {
     font-weight: bold;
 }
 .info-popup .key:after {
     content: ": ";
 }
-
 .info-popup {
     overflow: hidden;
 }
-
 .fa-phone {
     font-weight: bold;
 }
-
 .info-popup .infolinks {
     text-align: center;
 }
-
 #zoomto {
     font-size: 130%;
 }
-
 .claim-amount {
     font-weight: bold;
     color: green;
 }
-
 #logo {
     z-index: 10;
     position: absolute;
@@ -44,7 +45,6 @@ body { height: 100%; margin: 0; padding: 0 }
     padding-right: 5px;
     padding-bottom: 20px;
 }
-
 #floor-control {
     z-index: 10;
     position: absolute;
@@ -53,7 +53,6 @@ body { height: 100%; margin: 0; padding: 0 }
     padding-right: 5px;
     padding-top: 55px;
 }
-
 #floor-control .spinner {
     right: 30px;
 }

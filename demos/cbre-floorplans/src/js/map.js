@@ -19,7 +19,7 @@ var currentFloorLayer;
 
 function clearFloorSelections() {
     $("#floor-control .btn.active").removeClass("active");
-    
+
     // remove any existing Maps Engine Floor Plan Layer
     if (currentFloorLayer) {
         currentFloorLayer.setMap(null);
@@ -33,33 +33,33 @@ var searchMarkers = [];
 
 function floorId(buildingId, floor) {
     switch (buildingId) {
-            case "1":
-            	if (floor == "G") {
-                    return "14243126420781440025-03905909624632846619";
-                }
-            break;
-            case "2":
-            	if ((floor == "LG") || (floor == "G")) {
-                    return "14243126420781440025-16932951632409324660";
-                }else{
-                    return "14243126420781440025-13869695321477240807";
-                }
-            break;
-            default:
-            console.log("Unknown building id: " + buildingId);
+    case "1":
+        if (floor == "G") {
+            return "14243126420781440025-03905909624632846619";
+        }
+        break;
+    case "2":
+        if ((floor == "LG") || (floor == "G")) {
+            return "14243126420781440025-16932951632409324660";
+        } else {
+            return "14243126420781440025-13869695321477240807";
+        }
+        break;
+    default:
+        console.log("Unknown building id: " + buildingId);
     }
     return null;
 }
 
 function loadFloor(buildingId, floor) {
     clearFloorSelections();
-    
+
     var outlineStyle = buildingOutlines.getFeatureStyle(buildingId);
     outlineStyle.fillOpacity = '0';
-    
+
     var buttonId = "floorButton_" + buildingId + "_" + floor;
     $("#" + buttonId).addClass("active");
-    
+
     // load the GME layer
     currentFloorLayer = new google.maps.visualization.MapsEngineLayer({
         layerId: floorId(buildingId, floor),
@@ -73,7 +73,7 @@ function loadFloor(buildingId, floor) {
 function authorizationComplete(authResult) {
     // hacky, but all things which use it are only called after we've set it here
     globalAuthResult = authResult;
-    
+
     /* initialise the Google Map */
     map = new google.maps.Map(document.getElementById("map-canvas"),
         mapOptions);
@@ -111,27 +111,29 @@ function authorizationComplete(authResult) {
 
     google.maps.event.addListener(buildingOutlines, 'click', function (event) {
         selectedBuilding = event.featureId;
-        
-        searchMarkers.forEach(function(marker) {
+
+        searchMarkers.forEach(function (marker) {
             marker.setMap(null);
         });
-        
+
         /* remove selection style from previous feature */
         if (selectedFeature) {
             var style = buildingOutlines.getFeatureStyle(selectedFeature);
             style.resetAll();
         }
-        
+
         // remove any previous building level control
         var floorControlNode = $("#floor-control")[0];
         while (floorControlNode.firstChild) {
             floorControlNode.removeChild(floorControlNode.firstChild);
         }
-        
+
         clearFloorSelections();
-        
+
         // add the loading spinner
-        var loadSpinner = new Spinner({left: 0}).spin();
+        var loadSpinner = new Spinner({
+            left: 0
+        }).spin();
         floorControlNode.appendChild(loadSpinner.el);
 
         // and update our selected feature to the current one
@@ -145,30 +147,30 @@ function authorizationComplete(authResult) {
         // zoom to click
         //map.panTo(event.latLng);
         //map.setZoom(17);
-        
+
         // make a call to the Google Maps Engine API to get the properties for this selected feature
         var getFeatureURL = 'https://www.googleapis.com/mapsengine/v1/tables/' + buildingOutlinesDataSourceId + '/features/' + event.featureId
-        
+
         $.ajax({
             url: getFeatureURL,
             dataType: 'json',
             headers: {
-              'Authorization': 'Bearer ' + authResult.access_token
+                'Authorization': 'Bearer ' + authResult.access_token
             },
-            success: function(response) {
+            success: function (response) {
                 // remove loading spinner
                 var floorControlNode = $("#floor-control")[0];
                 while (floorControlNode.firstChild) {
                     floorControlNode.removeChild(floorControlNode.firstChild);
                 }
-                
+
                 if (response.properties.hasOwnProperty("floors")) {
                     var buttonGroup = $('<div class="btn-group-vertical btn-group-sm"></div>')[0];
-                    
+
                     var header = $('<h4>Floors</h4>')[0];
                     buttonGroup.appendChild(header);
-                    
-                    response.properties.floors.split(",").reverse().forEach(function(i) {
+
+                    response.properties.floors.split(",").reverse().forEach(function (i) {
                         var buttonId = "floorButton_" + event.featureId + "_" + i;
                         var button = $('<button id="' + buttonId + '" type="button" class="btn btn-default" onclick="loadFloor(' + "'" + event.featureId + "'" + ',' + "'" + i + "'" + ')">' + i + '</button>')[0];
                         buttonGroup.appendChild(button);
@@ -178,12 +180,12 @@ function authorizationComplete(authResult) {
                 // update feature info window using the poperties of the selected feature
                 //$("#feature-info").innerHTML = compiledTemplateInfo(feature.properties);
             },
-            error: function(response) {
-              response = JSON.parse(response.responseText);
-              console.log("Error: ", response);
+            error: function (response) {
+                response = JSON.parse(response.responseText);
+                console.log("Error: ", response);
             }
-          });
-        
+        });
+
 
     });
 
@@ -225,19 +227,19 @@ function createSearchBox() {
             };
 
             // Create a marker for each place.
-              var marker = new google.maps.Marker({
+            var marker = new google.maps.Marker({
                 map: map,
                 //icon: image,
                 title: place.name,
                 position: place.geometry.location
-              });
+            });
 
             searchMarkers.push(marker);
 
             if (i == 0) { // but only zoom to first result. e.g. 570 George Street
                 if (place.geometry.viewport) {
                     bounds.union(place.geometry.viewport);
-                }else if (place.geometry.location) {
+                } else if (place.geometry.location) {
                     bounds.extend(place.geometry.location);
                 }
             }
