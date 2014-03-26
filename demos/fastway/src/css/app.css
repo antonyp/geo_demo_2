@@ -32,6 +32,15 @@ body {
     padding-bottom: 20px;
 }
 
+#logo-optimation {
+    z-index: 10;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding-right: 25px;
+    padding-bottom: 155px;
+}
+
 .hide {
     visibility: hidden;
 }

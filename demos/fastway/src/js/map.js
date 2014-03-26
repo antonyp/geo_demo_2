@@ -12,9 +12,9 @@ function initialise() {
     map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 
     createSearchBox();
-    
 }
 
+var searchMarkers = [];
 
 function createSearchBox() {
 
@@ -69,8 +69,8 @@ function createSearchBox() {
 
         if (bounds) {
             map.fitBounds(bounds);
-            if (map.getZoom() > 18) {
-                map.setZoom(18);
+            if (map.getZoom() > 21) {
+                map.setZoom(21);
             }
         }
     });
