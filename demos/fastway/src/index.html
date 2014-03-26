@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+        <!-- stylesheet templates -->
+        <link rel="stylesheet" href="/javascript/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/javascript/bootstrap/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="/javascript/fonts-font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="lib/animate.min.css">
+
+        <!-- application stylesheet -->
+        <link rel="stylesheet" href="css/app.css">
+
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700" rel="stylesheet" type="text/css">
+
+        <!-- google map application stylesheet -->
+        <link rel="stylesheet" href="css/maps-googlestyle.css">
+
+        <!-- JavaScript libraries -->
+        <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?v=3.exp&client=gme-optimationcloudservices&sensor=false&libraries=places,visualization">
+            </script>
+            <script src="/javascript/jquery/jquery.min.js"></script>
+            <script src="/javascript/bootstrap/js/bootstrap.min.js"></script>
+            <script src="lib/chance.min.js"></script>
+
+            <script src="data/randomPoints.js"></script>
+
+            <!-- application Javascript -->
+            <script src="js/map.js"></script>
+
+        </head>
+        <body>
+            <div id="newbooking-modal" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">Booking #1234</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p><b>Address:</b> 32 George Street, Surfers Paradise, QLD</p>
+                            <p><b>Special Instructions:</b> n/a</p>
+                            <p><b>Package Class:</b> B</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="courier-notified-modal" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">Booking #1234</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Courier <b>John Smith</b> has been assigned parcel #654328.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input id="pac-input" class="controls" type="text" placeholder="Place Search...">
+            <img id="logo" src="img/barbador-logo.png">
+            <div id="side-pane">
+                <h1>Courier Bookings</h1>
+                <hr/>
+                <p>
+                This demonstrator shows how a courier booking system could work and
+                how it could be visualised on a map using Google Maps.
+                </p>
+                <button type="button" id="start-btn"
+                    data-loading-text="Lets get started..." class="btn btn-primary show">
+                    Lets get started
+                </button>
+                <ol id="step-list">
+                    <li id="step1-new-booking-desc" class="hide">A new booking
+                    has just been lodged and is in the queue to be assigned to a
+                    courier.</li>
+                    <li id="step2-geocoded-desc" class="hide">The address is
+                    geocoded using the Google Geocoding API so it can be ploted
+                    on the map geospatially.</li>
+                    <li id="step3-geospatial-operation-desc" class="hide">A
+                    geospatial operation is performed with this point against
+                    courier zones to assign the booking to a courier.</li>
+                    <li id="step4-courier-notified-desc" class="hide">The
+                    selected courier is notified of the booking.</li>
+                    <li id="step5-visualisation-desc" class="hide">The operator can view all
+                    bookings and courier zones on the map. They can query each
+                    for more details by clicking on the map. Bookings are styled
+                    based on status. This provides a
+                    live operational view with a geospatial context.</li>
+                </ol>
+                <div class="bottom-bar">
+                    <button type="button" id="next-btn"
+                        class="btn btn-primary show hide">
+                        Next
+                    </button>
+                </div>
+            </div>
+            <div id="map-canvas"></div>
+        </body>
+        <script src="js/demo.js"></script>
+    </html>

@@ -1,0 +1,53 @@
+html {
+    height: 100%
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+#map-canvas {
+    height: 100%;
+    margin-left: 400px;
+}
+#side-pane {
+    width: 400px;
+    height: 100%;
+    float: left;
+    padding: 20px;
+    background: whitesmoke;
+    position: relative;
+}
+
+#side-pane h1 {
+    font-family: "Open Sans";
+}
+
+#logo {
+    z-index: 10;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.modal-dialog{
+    position: absolute;
+    left: 50%;
+    margin-left: -312px;
+    height: 500px;
+    top: 50%;
+    margin-top: -250px;
+} 
+
+.bottom-bar {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    float: right;
+}
