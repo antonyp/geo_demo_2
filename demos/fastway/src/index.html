@@ -81,22 +81,29 @@
                     Lets get started
                 </button>
                 <ol id="step-list">
-                    <li id="step1-new-booking-desc" class="hide">A new booking
-                    has just been lodged and is in the queue to be assigned to a
-                    courier.</li>
+                    <li id="step1-new-booking-desc" class="hide">A booking
+                    is entered into the system with Address, Label, Date and
+                    Time for collection.</li>
                     <li id="step2-geocoded-desc" class="hide">The address is
                     geocoded using the Google Geocoding API so it can be ploted
                     on the map geospatially.</li>
                     <li id="step3-geospatial-operation-desc" class="hide">A
                     geospatial operation is performed with this point against
                     courier zones to assign the booking to a courier.</li>
-                    <li id="step4-courier-notified-desc" class="hide">The
-                    selected courier is notified of the booking.</li>
-                    <li id="step5-visualisation-desc" class="hide">The operator can view all
-                    bookings and courier zones on the map. They can query each
-                    for more details by clicking on the map. Bookings are styled
-                    based on status. This provides a
-                    live operational view with a geospatial context.</li>
+                    <li id="step4-courier-notified-desc" class="hide">
+                    At the start of the cycle in which the parcel should be
+                    collected the allocated courier is automatically notified of
+                    the collection job.
+                    </li>
+                    <li id="step5-visualisation-desc" class="hide">
+                    The track and trace data is monitored for real time
+                    exception reporting, in real time on the map Customer
+                    Service staff have the ability to see all bookings that are
+                    overdue, the courier is notified that a collection has been
+                    missed. The customer service staff are also able to search
+                    for jobs by courier, by address and by label number in order
+                    to ascertain current status. 
+                    </li>
                 </ol>
                 <div class="bottom-bar">
                     <button type="button" id="next-btn"
