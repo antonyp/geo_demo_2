@@ -180,10 +180,19 @@ function step6() {
     });
     $('#next-btn').addClass('animated bounceOutDown');
 
+    /*
     var suburbsLayer = new google.maps.visualization.DynamicMapsEngineLayer({
         layerId: '14243126420781440025-06900458292272798243',
         map: map,
         suppressInfoWindows: true,
+        clickable: true
+    });
+    */
+
+    var suburbsLayer = new google.maps.visualization.DynamicMapsEngineLayer({
+        layerId: '14243126420781440025-15989983115440808490', /* territories */
+        map: map,
+        suppressInfoWindows: false,
         clickable: true
     });
 
@@ -199,6 +208,7 @@ function step6() {
           suburbsLayer.getFeatureStyle(e.featureId).resetAll();
     });
 
+    /*
     google.maps.event.addListener(suburbsLayer, 'click', function(e) {
         var contentString = '<h3>Courier Zone - ' + chance.city() + '</h3>' +
         '<ul>' +
@@ -223,6 +233,7 @@ function step6() {
 
         openInfoWindows.push(infowindow);
     });
+    */
 
 
     var randomPointsWithinView = [];
