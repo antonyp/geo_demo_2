@@ -35,9 +35,9 @@ $('#start-btn').click(function () {
 
     // animate out the button
     btn.addClass('animated bounceOutLeft');
-    if ($.browser.mozilla) {
-        step1();
-    }
+
+    // mozilla didn't actually call step1...
+    step1();
 });
 
 // STEP 1 - New booking lodged in queue
