@@ -6,7 +6,7 @@ var currentStep = 0;
 $('#next-btn').click(function () {
     switch (currentStep) {
         case 1:
-            $('#newbooking-modal').modal('hide')
+            $('#newbooking-modal').modal('hide');
             break;
         case 2:
             focus_infowindow.close();
@@ -24,11 +24,11 @@ $('#next-btn').click(function () {
 
 // STEP 0 - Start
 $('#start-btn').click(function () {
-    var btn = $(this)
+    var btn = $(this);
 
     // change the button state to indicated that we've registered the
     // click and are doing something
-    btn.button('loading')
+    btn.button('loading');
 
     // set what to do once the animation ends
     btn.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', step1);
