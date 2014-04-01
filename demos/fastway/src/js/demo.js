@@ -7,17 +7,21 @@ $('#next-btn').click(function () {
     switch (currentStep) {
         case 1:
             $('#newbooking-modal').modal('hide');
+            ga('send', 'event', 'button', 'click', 'next1', 1);
             break;
         case 2:
             focus_infowindow.close();
+            ga('send', 'event', 'button', 'click', 'next2', 1);
             step3();
             break;
         case 3:
             step3_infowindow.close();
+            ga('send', 'event', 'button', 'click', 'next3', 1);
             step4();
             break;
         case 4:
             $('#courier-notified-modal').modal('hide');
+            ga('send', 'event', 'button', 'click', 'next4', 1);
             break;
     }
 });
@@ -36,6 +40,8 @@ $('#start-btn').click(function () {
     // animate out the button
     btn.addClass('animated bounceOutLeft');
 
+    ga('send', 'event', 'button', 'click', 'start');
+
     // mozilla didn't actually call step1...
     step1();
 });
@@ -48,6 +54,8 @@ function step1() {
     // animate in the list item
     $('#step1-new-booking-desc').addClass('animated bounceInLeft');
     $('#step1-new-booking-desc').removeClass('hide');
+    
+    ga('send', 'event', 'achievement', 'completed', 'step1', 1);
 }
 
 
@@ -80,6 +88,8 @@ function step2() {
     $('#step2-geocoded-desc').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', step2_marker);
     $('#step2-geocoded-desc').addClass('animated bounceInLeft');
     $('#step2-geocoded-desc').removeClass('hide');
+
+    ga('send', 'event', 'achievement', 'completed', 'step2', 1);
 }
 
 var focus_marker;
@@ -121,6 +131,8 @@ function step3() {
     $('#step3-geospatial-operation-desc').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', step3_zones);
     $('#step3-geospatial-operation-desc').addClass('animated bounceInLeft');
     $('#step3-geospatial-operation-desc').removeClass('hide');
+
+    ga('send', 'event', 'achievement', 'completed', 'step3', 1);
 }
 
 var step3_infowindow;
@@ -151,6 +163,8 @@ function step4() {
     $('#step4-courier-notified-desc').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', step4_modal);
     $('#step4-courier-notified-desc').addClass('animated bounceInLeft');
     $('#step4-courier-notified-desc').removeClass('hide');
+
+    ga('send', 'event', 'achievement', 'completed', 'step4', 1);
 }
 
 function step4_modal() {
@@ -173,6 +187,8 @@ function step5() {
     $('#step5-visualisation-desc').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', step6);
     $('#step5-visualisation-desc').addClass('animated bounceInLeft');
     $('#step5-visualisation-desc').removeClass('hide');
+
+    ga('send', 'event', 'achievement', 'completed', 'step5', 1);
 }
 
 var openInfoWindows = [];
@@ -275,4 +291,6 @@ function step6() {
 
         }, index * 50);
     });
+
+    ga('send', 'event', 'achievement', 'completed', 'step6', 1);
 };
