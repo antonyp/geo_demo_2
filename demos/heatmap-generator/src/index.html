@@ -3,22 +3,33 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
       
+    <!-- must appear before application stylesheet so we can override some
+    styles -->
+    <link rel="stylesheet" href="/javascript/jqrangeslider/css/iThing-min.css">
+
     <!-- application stylesheet -->
     <link rel="stylesheet" href="css/app.css">
 
     <!-- google map application stylesheet -->
     <link rel="stylesheet" href="css/maps-googlestyle.css">
      
+
     <!-- JavaScript libraries -->
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?client=gme-optimationcloudservices&sensor=false&libraries=places,visualization">
     </script>
-    <script src="/javascript/jquery/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
     <script src="lib/FileSaver.js"></script>
 
-    <script src="js/map.js"></script>
+
+    <script src="/javascript/jqrangeslider/jQAllRangeSliders-min.js"></script>
+    
   </head>
   <body>
-    <div id="map-canvas"/>
+    <div id="slider"></div>
+    <div id="map-canvas"></div>
+    <script src="js/timeslider.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>

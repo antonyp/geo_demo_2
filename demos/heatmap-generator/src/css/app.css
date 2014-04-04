@@ -4,8 +4,30 @@ html {
 body {
     height: 100%;
     margin: 0;
-    padding: 0
+    padding: 0;
+    overflow: hidden; /* hack to remove scrollbar */
 }
 #map-canvas {
-    height: 100%
+    /*height: 100%*/
+    height: -moz-calc(100% - 30px);
+    height: -webkit-calc(100% - 30px);
+    height: calc(100% - 30px);
 }
+
+#slider {
+    z-index: 1;
+    padding-top: 0px;
+}
+
+/* once to flip the arrow and another to fix the text */
+.ui-rangeSlider-label, .ui-rangeSlider-label-value {
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+
+    bottom: -38px;
+}
+

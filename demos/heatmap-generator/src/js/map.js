@@ -4,9 +4,6 @@ var mapOptions = {
     zoom: 15
 };
 
-/* Google Maps map */
-var map;
-
 var clicks = [];
 var heatmapData = [];
 
@@ -14,10 +11,11 @@ var heatmap;
 
 function initialise() {
     /* initialise the Google Map */
-    map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 
     google.maps.event.addListener(map, 'click', function (e) {
-        clicks.push(e.latLng.toString().substring(1, e.latLng.toString().length-2));
+        var selectedRange = { min: timeSlider.dateRangeSlider('min'), max: timeSlider.dateRangeSlider('max') };
+        clicks.push(e.latLng.toString().substring(1, e.latLng.toString().length-2) + ',' + selectedRange['min'].toLocaleTimeString() + '-' + selectedRange['max'].toLocaleTimeString());
         heatmapData.push(e.latLng);
 
         if (heatmap != null) {
