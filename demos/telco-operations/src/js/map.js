@@ -82,6 +82,35 @@ function initialise() {
         }
     });
 
+    /* create xg-signal-strength but don't add to map initially */
+    layers['layer-2g-signal-strength'] = new google.maps.visualization.MapsEngineLayer({
+                layerId: '14243126420781440025-06423057872183631348',
+                map: null,
+                suppressInfoWindows: true,
+                clickable: false
+            });
+    
+    layers['layer-3g-signal-strength'] = new google.maps.visualization.MapsEngineLayer({
+                layerId: '14243126420781440025-16617043393034901554',
+                map: null,
+                suppressInfoWindows: true,
+                clickable: false
+            });
+
+    layers['layer-4g-signal-strength'] = new google.maps.visualization.MapsEngineLayer({
+                layerId: '14243126420781440025-13196914896823253024',
+                map: null,
+                suppressInfoWindows: true,
+                clickable: false
+            });
+
+    layers['layer-2g-signal-strength'].setOpacity(0.7);
+    layers['layer-3g-signal-strength'].setOpacity(0.7);
+    layers['layer-4g-signal-strength'].setOpacity(0.7);
+
+    $('#layer-2g-signal-strength').change(layerToggle);
+    $('#layer-3g-signal-strength').change(layerToggle);
+    $('#layer-4g-signal-strength').change(layerToggle);
 
     $("#slider").bind("valuesChanging", function(e, data){
         if (currentHour != data.values.min.getHours()) {
