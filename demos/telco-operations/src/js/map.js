@@ -31,12 +31,13 @@ var colourRamp = 'YlOrRd';
 colorbrewer[colourRamp]["9"].unshift(chroma(colorbrewer[colourRamp]["9"][0]).alpha(0).css());
 
 $.ajax({
-    url: "data/dataPoints.txt",
+    url: "data/networkIssuesAkl.txt",
     success: function (csv) {
        allSamples = $.csv.toArrays(csv);
        allSamples.forEach(function(i) {
            var loc = new google.maps.LatLng(i[0], i[1]);
            var startHour = i[2].split('-')[0].split(':')[0];
+           var startMinute = i[2].split('-')[0].split(':')[1];
            if (samples[startHour] === undefined) {
                samples[startHour] = [];
            }
