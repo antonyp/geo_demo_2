@@ -8,10 +8,6 @@
     <link href="//fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700"
     rel="stylesheet" type="text/css">
       
-    <!-- must appear before application stylesheet so we can override some
-    styles -->
-    <link rel="stylesheet" href="/javascript/jqrangeslider/css/iThing-min.css">
-
     <!-- google map application stylesheet -->
     <link rel="stylesheet" href="css/maps-googlestyle.css">
 
@@ -20,6 +16,8 @@
      
     <link rel="stylesheet" href="lib/colorbrewer.css">
 
+    <link rel="stylesheet" href="/javascript/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/javascript/bootstrap/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
 
     <!--<link rel="stylesheet" href="lib/flat-ui/css/flat-ui.css">-->
@@ -28,46 +26,91 @@
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?v=3.exp&client=gme-optimationcloudservices&sensor=false&libraries=places,visualization">
     </script>
-    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="/javascript/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="lib/mustache.js"></script>
     <script src="lib/colorbrewer.v1.min.js"></script>
     <script src="lib/chroma.min.js"></script>
+    <script src="lib/chance.min.js"></script>
+    <script src="lib/Chart.min.js"></script>
 
+    <!-- application Javascript -->
+    <script src="js/templateStrings.js"></script>
     <script src="js/mapStyles.js"></script>
   </head>
   <body>
     <div id="layer-toggle" class="control-box">
-        <h4>Customers</h4>
+        <h4>Market</h4>
         <p>
-        <input type="checkbox" id="layer-customer-penetration"/>
-        <i class="fa fa-users"></i>
-        <label for="layer-customer-penetration">Customer Penetration</label>
+        <input type="checkbox" id="layer-market-penetration"/>
+        <label for="layer-market-penetration"><i class="fa fa-users"></i>Market Penetration</label>
         </p>
 
         <h4>Stores</h4>
         <p>
         <input type="checkbox" id="layer-primary-stores"/>
-        <i class="fa fa-building-o"></i>
-        <label for="layer-primary-stores">Telco Stores</label>
+        <label for="layer-primary-stores"><i class="fa fa-building-o"></i>Primary Stores</label>
         <br>
         <input type="checkbox" id="layer-secondary-stores"/>
-        <i class="fa fa-shopping-cart"></i>
-        <label for="layer-secondary-stores">Secondary Stores</label>
+        <label for="layer-secondary-stores"><i class="fa fa-shopping-cart"></i>Secondary Stores</label>
         </p>
 
-        <h4>Sales Territories</h4>
+        <h4>Territories</h4>
         <p>
         <input type="checkbox" id="layer-sales-territories"/>
-        <i class="fa fa-dollar"></i>
-        <label for="layer-sales-territories">Sales Territories</label>
+        <label for="layer-sales-territories"><i class="fa fa-dollar"></i>Sales Territories</label>
         </p>
 
         <h4>Demographics</h4>
         <p>
         <input type="checkbox" id="layer-population"/>
-        <i class="fa fa-user"></i>
-        <label for="layer-population">2013 Population</label>
+        <label for="layer-population"><i class="fa fa-user"></i>2013 Population</label>
         </p>
+
+        <h4>Signal Strength</h4>
+        <p>
+        <fieldset id="signalStrengths">
+            <input type="checkbox" id="layer-2g-signal-strength"/>
+            <label for="layer-2g-signal-strength">2G Signal Strength</label>
+            <br>
+            <input type="checkbox" id="layer-3g-signal-strength"/>
+            <label for="layer-3g-signal-strength">3G Signal Strength</label>
+            <br>
+            <input type="checkbox" id="layer-4g-signal-strength"/>
+            <label for="layer-4g-signal-strength">4G Signal Strength</label>
+        </fieldset>
+        </p>
+    </div>
+    <div id="legend" class="legend control-box control-bottom control-left">
+        <div class="item">
+            <div class="box Greens">
+                <div class="bar b0 q0-5"></div>
+                <div class="bar b1 q1-5"></div>
+                <div class="bar b2 q2-5"></div>
+                <div class="bar b3 q3-5"></div>
+                <div class="bar b4 q4-5"></div>
+            </div> 2G<br>
+        </div>
+        <div class="item">
+            <div class="box Blues">
+                <div class="bar b0 q0-5"></div>
+                <div class="bar b1 q1-5"></div>
+                <div class="bar b2 q2-5"></div>
+                <div class="bar b3 q3-5"></div>
+                <div class="bar b4 q4-5"></div>
+            </div> 3G<br>
+        </div>
+        <div class="item">
+            <div class="box Purples">
+                <div class="bar b0 q0-5"></div>
+                <div class="bar b1 q1-5"></div>
+                <div class="bar b2 q2-5"></div>
+                <div class="bar b3 q3-5"></div>
+                <div class="bar b4 q4-5"></div>
+            </div> 4G<br>
+        </div>
     </div>
     <img id="barbador-logo" class="logo" src="img/barbador-logo.png"/>
     <img id="optimation-logo" class="logo" src="img/optimation-logo.gif"/>
