@@ -288,15 +288,15 @@ function primaryStoresCallback(results, status) {
 
             if (marker != null) {
                 google.maps.event.addListener(marker, 'click', function() {
-                    var infowindow = new google.maps.InfoWindow({
+                    var primaryStoreInfoWindow = new google.maps.InfoWindow({
                         content: compiledTemplateStore({
                             "store": chance.city(),
                             "store-manager": chance.name(),
                             "phone": "+64 " + chance.phone()
-                                 })
+                                 }),
                     });
-
-                    infowindow.open(map, marker);
+                
+                    primaryStoreInfoWindow.open(map, this);
                 });
             }
         }
