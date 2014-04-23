@@ -22,6 +22,11 @@ var compiledTemplateStore = Mustache.compile(templateString['store']);
 
 var chartCounter = 0;
 
+var directionsService = new google.maps.DirectionsService();
+var directionsDisplay;
+
+var directionsInfoWindow = new google.maps.InfoWindow();
+
 function initialise() {
     $('#legend').hide();
 
@@ -66,6 +71,32 @@ function initialise() {
     $('#layer-2g-signal-strength').change(layerToggle);
     $('#layer-3g-signal-strength').change(layerToggle);
     $('#layer-4g-signal-strength').change(layerToggle);
+
+    // Population Range
+    var populationRangeId = {
+        '0': ,
+        '5': ,
+        '10': ,
+        '15': ,
+        '20': ,
+        '25': ,
+        '30': ,
+        '35': ,
+        '40': ,
+        '45': ,
+        '50': ,
+        '55': ,
+        '60': ,
+        '65': 
+    };
+    for (var start = 0; start < 70; start += 5) {
+        layers['layer-population-range-' + start] = new google.maps.visualization.MapsEngineLayer({
+            layerId: populationRangeId[start],
+            map: null,
+            suppressInfoWindows: true,
+            clickable: false
+        });
+    }
 
     // Market Penetration
     layers['layer-market-penetration'] = new google.maps.visualization.DynamicMapsEngineLayer({
@@ -214,6 +245,78 @@ function initialise() {
     layers['layer-population'].setOpacity(0.3);
 
     $('#layer-population').change(layerToggle);
+
+    /* directions */
+    directionsDisplay = new google.maps.DirectionsRenderer({
+        draggable: true,
+        hideRouteList: true,
+        suppressMarkers: true,
+        map: map,
+        infoWindow: directionsInfoWindow
+    });
+    /*google.maps.event.addListener(directionsDisplay, 'directions_changed', function() {
+        updateTripStats(directionsDisplay.getDirections());
+    });*/
+
+    $('#distance-control').on('click', distanceControl);
+
+}
+
+var storeSelected;
+var locationSelected;
+var originMarker;
+
+function distanceControl() {
+    google.maps.event.addListener(map, 'click', function(e) {
+        locationSelected = e.latLng;
+        tryToCalculateDistance();
+    });
+}
+
+function tryToCalculateDistance() {
+    if (storeSelected && locationSelected) {
+        var request = {
+            origin: locationSelected,
+            destination: storeSelected,
+            travelMode: google.maps.TravelMode.DRIVING
+        };
+        if (originMarker) {
+            originMarker.setMap(null);
+        }
+        originMarker = new google.maps.Marker({
+            position: locationSelected,
+            draggable: true,
+            clickable: false,
+            map: map
+        });
+        google.maps.event.addListener(originMarker, 'dragend', function() {
+            locationSelected = originMarker.getPosition();
+            tryToCalculateDistance();
+        });
+        directionsService.route(request, function(response, status) {
+            if (status == google.maps.DirectionsStatus.OK) {
+                directionsDisplay.setMap(map);
+                directionsDisplay.setDirections(response);
+                var totalDist = 0;
+                var totalTime = 0;
+                var myroute = response.routes[0];
+                for (var i = 0; i < myroute.legs.length; i++) {
+                    totalDist += myroute.legs[i].distance.value;
+                    totalTime += myroute.legs[i].duration.value;
+                }
+                var totalDistInKm = totalDist / 1000.0;
+                var totalTimeInMin = totalTime = 60.0;
+                directionsInfoWindow.setContent('<b>' + totalDistInKm + 'km</b> in <b>' + totalTimeInMin + 'min</b> of driving time');
+                directionsInfoWindow.open(map, originMarker);
+                directionsInfoWindow.setMap(map);
+                google.maps.event.addListener(directionsInfoWindow, 'closeclick', function () {
+                    originMarker.setMap(null);
+                    locationSelected = undefined;
+                    directionsDisplay.setMap(null);
+                });
+            }
+        });
+    }
 }
 
 function markersToggle() {
@@ -272,6 +375,12 @@ function addPlace(layer, place) {
             title: place.name,
             icon: iconImage
         });
+
+        google.maps.event.addListener(marker, 'click', function() {
+            storeSelected = marker.getPosition();
+            tryToCalculateDistance();
+        });
+
         if (!(layer in placesOnMap)) {
             placesOnMap[layer] = {};
         }
@@ -330,4 +439,31 @@ function addSecondaryStores() {
     placesService.nearbySearch(request, secondaryStoresCallback);
 }
 
+
 google.maps.event.addDomListener(window, 'load', initialise);
+
+
+function layerTogglePopulationRange(start) {
+    // remove any existing layers
+    for (var start = 0; start < 70; start += 5) {
+        layers['layer-population-range-' + start].setMap(null);
+    }
+    // and add the selected one
+    layers['layer-population-range-' + start].setMap(map);
+};
+
+/* population age ranges */
+$(function() {
+    $( "#population-range-slider" ).slider({
+        value:100,
+        min: 0,
+        max: 70,
+        step: 5,
+        slide: function( event, ui ) {
+            $( "#population-range" ).text( ui.value + ' - ' + (ui.value + 4) );
+        },
+        change: function (event, ui ) {
+            layerTogglePopulationRange(ui.value);
+        }
+    });
+});

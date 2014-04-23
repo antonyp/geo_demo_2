@@ -88,3 +88,19 @@ h4 {
 #legend {
     bottom: 20px;
 }
+
+label .fa {
+    margin: 3px;
+}
+
+#population-range-slider {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#population-range {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+ }

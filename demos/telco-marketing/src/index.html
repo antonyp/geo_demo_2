@@ -13,6 +13,9 @@
 
     <!-- application stylesheet -->
     <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet"
+    href="lib/ui-lightness/jquery-ui-1.10.4.custom.min.css">
      
     <link rel="stylesheet" href="lib/colorbrewer.css">
 
@@ -29,6 +32,8 @@
 
     <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
     <script src="/javascript/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="lib/jquery-ui.custom.min.js"></script>
 
     <script src="lib/mustache.js"></script>
     <script src="lib/colorbrewer.v1.min.js"></script>
@@ -48,7 +53,21 @@
         <label for="layer-market-penetration"><i class="fa fa-users"></i>Market Penetration</label>
         </p>
 
-        <h4>Stores</h4>
+        <h4>Stores
+            <a id="distance-control" class="btn" href="#" style="padding: 0px 0px">
+                <!--    <i class="fa fa-location-arrow fa-lg"></i>-->
+            <span id="distance-control" class="fa-stack">
+                <i class="fa fa-square fa-stack-1x fa-lg"></i>
+                <i class="fa fa-location-arrow fa-stack-1x fa-inverse"></i>
+            </span>
+            </a>
+            <!--
+            <span id="distance-control" class="fa-stack">
+                <i class="fa fa-square fa-stack-1x fa-lg"></i>
+                <i class="fa fa-location-arrow fa-stack-1x fa-inverse"></i>
+            </span>
+            -->
+        </h4>
         <p>
         <input type="checkbox" id="layer-primary-stores"/>
         <label for="layer-primary-stores"><i class="fa fa-building-o"></i>Primary Stores</label>
@@ -65,21 +84,29 @@
 
         <h4>Demographics</h4>
         <p>
-        <input type="checkbox" id="layer-population"/>
-        <label for="layer-population"><i class="fa fa-user"></i>2013 Population</label>
+        <input type="checkbox" id="layer-median-population"/>
+        <label for="layer-median-population"><i class="fa fa-user"></i>2013 Median
+            Population</label>
+        <br>
+        <input type="checkbox" id="layer-population-by-age"/>
+        <label for="layer-population-by-age"><i class="fa fa-tasks"></i>2013 Population by Age</label>
+        <br>
+        <div id="population-range-slider"></div>
+        <span id="population-range" style="border:0; color: #f6931f;
+            font-weight:bold;"></span>
         </p>
 
         <h4>Signal Strength</h4>
         <p>
         <fieldset id="signalStrengths">
             <input type="checkbox" id="layer-2g-signal-strength"/>
-            <label for="layer-2g-signal-strength">2G Signal Strength</label>
+            <label for="layer-2g-signal-strength"><i class="fa fa-signal"></i>2G Signal Strength</label>
             <br>
             <input type="checkbox" id="layer-3g-signal-strength"/>
-            <label for="layer-3g-signal-strength">3G Signal Strength</label>
+            <label for="layer-3g-signal-strength"><i class="fa fa-signal"></i>3G Signal Strength</label>
             <br>
             <input type="checkbox" id="layer-4g-signal-strength"/>
-            <label for="layer-4g-signal-strength">4G Signal Strength</label>
+            <label for="layer-4g-signal-strength"><i class="fa fa-signal"></i>4G Signal Strength</label>
         </fieldset>
         </p>
     </div>
