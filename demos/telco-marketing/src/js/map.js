@@ -98,6 +98,14 @@ function initialise() {
         });
     }
 
+    $('#layer-population-by-age').change(function() {
+        if($('#layer-population-by-age').prop('checked')) {
+            layerTogglePopulationRange($( "#population-range-slider" ).slider("value"));
+        }else{
+            layerTogglePopulationRange(undefined);
+        }
+    });
+
     // Market Penetration
     layers['layer-market-penetration'] = new google.maps.visualization.DynamicMapsEngineLayer({
                 layerId: marketPenetrationLayerId,
@@ -451,7 +459,9 @@ function layerTogglePopulationRange(start) {
         layers['layer-population-range-' + i].setMap(null);
     }
     // and add the selected one
-    layers['layer-population-range-' + start].setMap(map);
+    if (start != undefined) {
+        layers['layer-population-range-' + start].setMap(map);
+    }
 };
 
 /* population age ranges */
