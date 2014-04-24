@@ -74,20 +74,20 @@ function initialise() {
 
     // Population Range
     var populationRangeId = {
-        '0': ,
-        '5': ,
-        '10': ,
-        '15': ,
-        '20': ,
-        '25': ,
-        '30': ,
-        '35': ,
-        '40': ,
-        '45': ,
-        '50': ,
-        '55': ,
-        '60': ,
-        '65': 
+        '0': '14243126420781440025-16891797349373911882',//
+        '5': '14243126420781440025-16891797349373911882',//
+        '10': '14243126420781440025-16891797349373911882',//
+        '15': '14243126420781440025-16891797349373911882',
+        '20': '14243126420781440025-14358731186252824513',
+        '25': '14243126420781440025-05366050553739564514',
+        '30': '14243126420781440025-01976180145767454159',
+        '35': '14243126420781440025-01976180145767454159',//fix
+        '40': '14243126420781440025-01976180145767454159',//
+        '45': '14243126420781440025-01976180145767454159',//
+        '50': '14243126420781440025-17782785704422799832',//
+        '55': '14243126420781440025-17782785704422799832',//
+        '60': '14243126420781440025-17782785704422799832',//fix
+        '65': '14243126420781440025-17782785704422799832'
     };
     for (var start = 0; start < 70; start += 5) {
         layers['layer-population-range-' + start] = new google.maps.visualization.MapsEngineLayer({
@@ -235,16 +235,14 @@ function initialise() {
         openInfoWindows.push(infowindow);
     });
 
-    layers['layer-population'] = new google.maps.visualization.MapsEngineLayer({
-                layerId: '14243126420781440025-15814808351002136958',
+    layers['layer-median-population'] = new google.maps.visualization.MapsEngineLayer({
+                layerId: '14243126420781440025-17474331814929300847',
                 map: null,
                 suppressInfoWindows: false,
                 clickable: true
             });
 
-    layers['layer-population'].setOpacity(0.3);
-
-    $('#layer-population').change(layerToggle);
+    $('#layer-median-population').change(layerToggle);
 
     /* directions */
     directionsDisplay = new google.maps.DirectionsRenderer({
@@ -268,6 +266,10 @@ var originMarker;
 
 function distanceControl() {
     google.maps.event.addListener(map, 'click', function(e) {
+        locationSelected = e.latLng;
+        tryToCalculateDistance();
+    });
+    google.maps.event.addListener(layers['layer-market-penetration'], 'click', function(e) {
         locationSelected = e.latLng;
         tryToCalculateDistance();
     });
@@ -445,8 +447,8 @@ google.maps.event.addDomListener(window, 'load', initialise);
 
 function layerTogglePopulationRange(start) {
     // remove any existing layers
-    for (var start = 0; start < 70; start += 5) {
-        layers['layer-population-range-' + start].setMap(null);
+    for (var i = 0; i < 70; i += 5) {
+        layers['layer-population-range-' + i].setMap(null);
     }
     // and add the selected one
     layers['layer-population-range-' + start].setMap(map);
@@ -457,12 +459,17 @@ $(function() {
     $( "#population-range-slider" ).slider({
         value:100,
         min: 0,
-        max: 70,
+        max: 65,
         step: 5,
         slide: function( event, ui ) {
-            $( "#population-range" ).text( ui.value + ' - ' + (ui.value + 4) );
+            if (ui.value == 65) {
+                $( "#population-range" ).text( ui.value + '+' );
+            }else{
+                $( "#population-range" ).text( ui.value + ' - ' + (ui.value + 4) );
+            }
         },
         change: function (event, ui ) {
+            $('#layer-population-by-age').prop('checked', true);
             layerTogglePopulationRange(ui.value);
         }
     });
