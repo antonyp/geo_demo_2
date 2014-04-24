@@ -142,6 +142,16 @@ function addTowersHidden() {
     map.data.setStyle({icon: 'img/poi_tower_communications.n.0092DA.16.png'});
     map.data.loadGeoJson('data/towers.geojson');
     layers['layer-cell-towers'] = map.data;
+
+    map.data.addListener('click', function(event) {
+        var towerInfoWindow = new google.maps.InfoWindow({
+        content: '<b>Tower ID:</b> 12957<br><b>Capabilities:</b> 900, 2100<br><b>Utilisation:</b> 32%<br><b>Status:</b> Operating Normally'
+              });
+        var anchor = new google.maps.MVCObject();
+        anchor.set('position', event.feature.getGeometry().get());
+        anchor.set('anchorPoint', new google.maps.Point(0, -12));
+        towerInfoWindow.open(map, anchor);
+    });
 }
 
 function layerToggle() {
