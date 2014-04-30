@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+    <link type="text/css" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700"
+    rel="stylesheet" type="text/css">
+      
+    <!-- must appear before application stylesheet so we can override some
+    styles -->
+    <link rel="stylesheet" href="/javascript/jqrangeslider/css/iThing-min.css">
+
+    <!-- google map application stylesheet -->
+    <link rel="stylesheet" href="css/maps-googlestyle.css">
+
+    <!-- application stylesheet -->
+    <link rel="stylesheet" href="css/app.css">
+     
+    <link rel="stylesheet" href="lib/colorbrewer.css">
+
+    <link rel="stylesheet" href="lib/ui-lightness/jquery-ui-1.10.4.custom.min.css">
+
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    
+    <!-- JavaScript libraries -->
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?v=3.exp&client=gme-optimationcloudservices&sensor=false&libraries=places,visualization,geometry">
+    </script>
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+
+    <script src="lib/jquery.csv-0.71.min.js"></script>
+
+    <script src="lib/colorbrewer.v1.min.js"></script>
+    <script src="lib/chroma.min.js"></script>
+
+    <script src="/javascript/jqrangeslider/jQAllRangeSliders-min.js"></script>
+    <script src="js/mapStyles.js"></script>
+    
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/seiyia-bootstrap-slider/css/bootstrap-slider.min.css">
+    <script src="lib/seiyia-bootstrap-slider/bootstrap-slider.min.js"></script>
+  </head>
+  <body>
+    <div id="slider"></div>
+    <div id="layer-toggle" class="control-box">
+        <h4>Traffic &amp; Transit</h4>
+        <p>
+        <input type="checkbox" id="layer-traffic"/>
+        <label for="layer-traffic">Live Traffic</label>
+        <br>
+        <input type="checkbox" id="layer-transit"/>
+        <label for="layer-transit">Transit</label>
+        </p>
+
+        <h4>Dropped Calls</h4>
+        <p>
+        <input type="checkbox" id="layer-dropped-calls-heatmap"/>
+        <label id="layer-dropped-calls-heatmap-label"
+            for="layer-dropped-calls-heatmap">Heatmap by spend</label>
+        <br>
+        <b>$0</b><input id="customer-spend-range-slider" type="text" value=""
+        data-slider-min="0" data-slider-max="200" data-slider-step="5"
+        data-slider-value="[20,50]"/><b>$200</b>
+        </p>
+
+        <h4>Signal Strength</h4>
+        <p>
+        <input type="checkbox" id="layer-2g-signal-strength"/>
+        <label for="layer-2g-signal-strength">2G Signal Strength</label>
+        <br>
+        <input type="checkbox" id="layer-3g-signal-strength"/>
+        <label for="layer-3g-signal-strength">3G Signal Strength</label>
+        <br>
+        <input type="checkbox" id="layer-4g-signal-strength"/>
+        <label for="layer-4g-signal-strength">4G Signal Strength</label>
+        </p>
+
+        <h4>Call Routes</h4>
+        <p>
+        <input type="checkbox" id="layer-call-routes"/>
+        <label for="layer-call-routes">Call Routes</label>
+        <a id="animate-route-button" class="btn" href="#" style="padding: 0px 0px"> 
+            <span id="animate-route" class="fa-stack">
+                <i class="fa fa-square fa-stack-1x fa-lg"></i>
+                <i class="fa fa-location-arrow fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+        </p>
+    </div>
+    <div id="legend" class="legend control-box control-bottom control-right">
+        <div class="item">
+            <div class="box Greens">
+                <div class="bar b0 q0-5"></div>
+                <div class="bar b1 q1-5"></div>
+                <div class="bar b2 q2-5"></div>
+                <div class="bar b3 q3-5"></div>
+                <div class="bar b4 q4-5"></div>
+            </div> 2G<br>
+        </div>
+        <div class="item">
+            <div class="box Blues">
+                <div class="bar b0 q0-5"></div>
+                <div class="bar b1 q1-5"></div>
+                <div class="bar b2 q2-5"></div>
+                <div class="bar b3 q3-5"></div>
+                <div class="bar b4 q4-5"></div>
+            </div> 3G<br>
+        </div>
+        <div class="item">
+            <div class="box Purples">
+                <div class="bar b0 q0-5"></div>
+                <div class="bar b1 q1-5"></div>
+                <div class="bar b2 q2-5"></div>
+                <div class="bar b3 q3-5"></div>
+                <div class="bar b4 q4-5"></div>
+            </div> 4G<br>
+        </div>
+    </div>
+    <img id="barbador-logo" class="logo" src="img/barbador-logo.png"/>
+    <img id="optimation-logo" class="logo" src="img/optimation-logo.gif"/>
+    <div id="map-canvas"></div>
+    <script src="js/timeslider.js"></script>
+    <script src="data/route.js"></script>
+    <script src="js/map.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+html {
+    height: 100%
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* hack to remove scrollbar */
+}
+#map-canvas {
+    /*height: 100%*/
+    height: -moz-calc(100% - 30px);
+    height: -webkit-calc(100% - 30px);
+    height: calc(100% - 30px);
+}
+
+#slider {
+    z-index: 1;
+    padding-top: 0px;
+}
+
+/* once to flip the arrow and another to fix the text */
+.ui-rangeSlider-label, .ui-rangeSlider-label-value {
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+
+    bottom: -38px;
+}
+
+.control-box {
+    position: absolute;
+    z-index: 2;
+
+    background: whitesmoke;
+    padding: 5px;
+    border-radius: 3px;
+    box-radius: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
+}
+
+#layer-toggle {
+    top: 50px;
+    left: 80px;
+
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+h4 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.bar {
+    width: 5px;
+}
+
+.b0 {
+    height: 3px;
+    margin-top: 15px;
+}
+.b1 {
+    height: 6px;
+    margin-left: 5px;
+    margin-top: -6px;
+}
+.b2 {
+    height: 10px;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+.b3 {
+    height: 14px;
+    margin-left: 15px;
+    margin-top: -14px;
+}
+.b4 {
+    height: 18px;
+    margin-left: 20px;
+    margin-top: -18px;
+}
+
+.logo {
+    z-index: 10;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+#optimation-logo {
+    padding-right: 25px;
+    padding-bottom: 155px;
+}
+
+#barbador-logo {
+    padding-right: 5px;
+    padding-bottom: 20px;
+}
+
+#legend {
+    bottom: 200px;
+}
+
+.slider-selection {
+        background: #BABABA;
+}
+
+.slider.slider-horizontal {
+    width: 100px !important;
+}
+
+#layer-dropped-calls-heatmap-label {
+    padding-bottom: 26px;
+}
+
