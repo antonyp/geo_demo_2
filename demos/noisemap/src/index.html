@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+        <!-- stylesheet templates -->
+        <link rel="stylesheet" href="/javascript/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/javascript/bootstrap/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="/javascript/fonts-font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="lib/bootstrap-slider/css/bootstrap-slider.min.css">
+
+        <!-- application stylesheet -->
+        <link rel="stylesheet" href="css/app.css">
+
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700" rel="stylesheet" type="text/css">
+
+        <!-- google map application stylesheet -->
+        <link rel="stylesheet" href="css/maps-googlestyle.css">
+
+        <!-- JavaScript libraries -->
+        <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?v=3.exp&client=gme-optimationcloudservices&sensor=false&libraries=places,visualization">
+            </script>
+            <script src="lib/jquery/jquery.min.js"></script>
+            <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+            <script src="lib/bootstrap-slider/bootstrap-slider.min.js"></script>
+
+            <!-- application Javascript -->
+            <script src="js/map.js"></script>
+
+        </head>
+        <body>
+            <!--<input id="pac-input" class="controls" type="text" placeholder="Place Search...">-->
+            <img id="logo" src="img/barbador-logo.png">
+            <img id="logo-optimation" src="img/optimation-logo.gif">
+            <div id='legend-box' class="control-box">
+                <div class='noise-legend'>
+                    <div class='legend-title'>Noise Level</div>
+                    <div class='legend-scale'>
+                        <ul class='legend-labels'>
+                            <li><span style='background:#feedde;'></span>0 dB</li>
+                            <li><span style='background:#fdbe85;'></span>20 dB</li>
+                            <li><span style='background:#fd8d3c;'></span>40 dB</li>
+                            <li><span style='background:#e6550d;'></span>60 dB</li>
+                            <li><span style='background:#a63603;'></span>80 dB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="about-box" class="control-box">
+                <h1>Noise Map</h1>
+                <p>
+                Noise modelling visualisation layer description and <a
+                    href="#link">link to more information</a>
+                </p>
+                <div>
+                    <span id="transparency-label">Opacity: <span
+                            id="transparency-value">50</span></span><br>
+                    <input id="transparency-check" type="checkbox" checked>
+                    <input id="transparency-slider" type="text"
+                    data-slider-min="0" data-slider-max="100"
+                    data-slider-step="1" data-slider-value="50"</input>
+                </div>
+            </div>
+            <div id="map-canvas"></div>
+        </body>
+    </html>

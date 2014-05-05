@@ -1,0 +1,115 @@
+html {
+    height: 100%
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+#map-canvas {
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    margin-top: 0px;
+}
+
+#logo {
+    z-index: 10;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+}
+
+#logo-optimation {
+    z-index: 10;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding-right: 25px;
+    padding-bottom: 155px;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.modal-dialog{
+    position: absolute;
+    left: 50%;
+    margin-left: -312px;
+    height: 500px;
+    top: 50%;
+    margin-top: -250px;
+} 
+
+.bottom-bar {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    float: right;
+}
+
+#about-box {
+    left: 90px;
+    top: 10px;
+    width: 300px;
+}
+
+.control-box {
+    z-index: 1;
+    position: absolute;
+
+    padding: 10px;
+    background: whitesmoke;
+    border-radius: 3px;
+}
+
+#transparency-value {
+    font-weight: bold;
+}
+
+#legend-box {
+    left: 20px;
+    bottom: 30px;
+}
+
+  .noise-legend .legend-title {
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 90%;
+  }
+  .noise-legend .legend-scale ul {
+      margin: 0;
+      padding: 0;
+      float: left;
+      list-style: none;
+  }
+  .noise-legend .legend-scale ul li {
+      display: block;
+      float: left;
+      width: 50px;
+      margin-bottom: 6px;
+      text-align: center;
+      font-size: 80%;
+      list-style: none;
+  }
+  .noise-legend ul.legend-labels li span {
+      display: block;
+      float: left;
+      height: 15px;
+      width: 50px;
+  }
+  .noise-legend .legend-source {
+      font-size: 70%;
+      color: #999;
+      clear: both;
+  }
+  .noise-legend a {
+      color: #777;
+  }
+
