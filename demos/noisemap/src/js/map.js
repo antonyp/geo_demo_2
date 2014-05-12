@@ -1,7 +1,8 @@
 /* Google Map default options */
 var mapOptions = {
     center: new google.maps.LatLng(-33.8519447,151.1915087),
-    zoom: 13
+    zoom: 13,
+    styles: snazzy['subtlegrayscale']
 };
 
 /* Google Maps map */
