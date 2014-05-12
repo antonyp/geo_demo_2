@@ -20,8 +20,8 @@ h1 {
     position: absolute;
     right: 0px;
     bottom: 0px;
-    padding-right: 5px;
-    padding-bottom: 20px;
+    margin-right: 5px;
+    margin-bottom: 20px;
 }
 
 #logo-optimation {
@@ -29,8 +29,19 @@ h1 {
     position: absolute;
     right: 0px;
     bottom: 0px;
-    padding-right: 25px;
-    padding-bottom: 155px;
+    margin-right: 25px;
+    margin-bottom: 155px;
+}
+
+#logo-wsp {
+    z-index: 10;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    margin-right: 25px;
+    margin-bottom: 230px;
+    padding: 5px;
+    background: white;
 }
 
 .hide {
