@@ -24,6 +24,7 @@
             <script src="lib/jquery/jquery.min.js"></script>
             <script src="lib/bootstrap/js/bootstrap.min.js"></script>
             <script src="lib/bootstrap-slider/bootstrap-slider.min.js"></script>
+            <script src="lib/bootbox.min.js"></script>
 
             <!-- application Javascript -->
             <script src="js/mapStyles.js"></script>
@@ -54,8 +55,12 @@
                 <h1>City Noise Mapping</h1>
                 <p>
                 This city noise mapping demonstrator, generated from road
-                network data is visualised using a Google Maps solution.
-                <!--<a  href="#link">link to more information</a>-->
+                network data is visualised using a Google Maps solution. You can
+                pan and zoom around the map, click on the map for the noise
+                level values and change the heat map opacity.
+                </p>
+                <p>
+                    <a href="#" id="moreinfo">Click here for more information.</a>
                 </p>
                 <div>
                     <span id="transparency-label">Opacity: <span
@@ -67,5 +72,6 @@
                 </div>
             </div>
             <div id="map-canvas"></div>
+            <script src="js/disclaimer.js"></script>
         </body>
     </html>
