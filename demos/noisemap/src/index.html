@@ -19,59 +19,71 @@
 
         <!-- JavaScript libraries -->
         <script type="text/javascript"
-            src="https://maps.googleapis.com/maps/api/js?v=3.exp&client=gme-optimationcloudservices&sensor=false&libraries=places,visualization">
-            </script>
-            <script src="lib/jquery/jquery.min.js"></script>
-            <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-            <script src="lib/bootstrap-slider/bootstrap-slider.min.js"></script>
-            <script src="lib/bootbox.min.js"></script>
+            src="https://maps.googleapis.com/maps/api/js?v=3.exp&client=gme-optimationcloudservices&channel=barbador-wsp-noismap&sensor=false&libraries=places,visualization"> </script>
 
-            <!-- application Javascript -->
-            <script src="js/mapStyles.js"></script>
-            <script src="js/map.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+                Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        </head>
-        <body>
-            <!--<input id="pac-input" class="controls" type="text" placeholder="Place Search...">-->
-            <img id="logo" src="img/barbador-logo.png">
-            <img id="logo-optimation" src="img/optimation-logo.gif">
-            <img id="logo-wsp" src="img/wsp.gif">
+            ga('create', 'UA-49602845-2',
+            'barbador-wsp-noisemap.appspot.com');
+            ga('send', 'pageview');
+        </script>
 
-            <div id='legend-box' class="control-box">
-                <div class='noise-legend'>
-                    <div class='legend-title'>Noise Level</div>
-                    <div class='legend-scale'>
-                        <ul class='legend-labels'>
-                            <li><span style='background:#feedde;'></span>0 dB</li>
-                            <li><span style='background:#fdbe85;'></span>20 dB</li>
-                            <li><span style='background:#fd8d3c;'></span>40 dB</li>
-                            <li><span style='background:#e6550d;'></span>60 dB</li>
-                            <li><span style='background:#a63603;'></span>80 dB</li>
-                        </ul>
-                    </div>
+        <script src="lib/jquery/jquery.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="lib/bootstrap-slider/bootstrap-slider.min.js"></script>
+        <script src="lib/bootbox.min.js"></script>
+
+        <!-- application Javascript -->
+        <script src="js/mapStyles.js"></script>
+        <script src="js/map.js"></script>
+
+    </head>
+    <body>
+        <!--<input id="pac-input" class="controls" type="text" placeholder="Place Search...">-->
+        <img id="logo" src="img/barbador-logo.png">
+        <img id="logo-optimation" src="img/optimation-logo.gif">
+        <img id="logo-wsp" src="img/wsp.gif">
+
+        <div id='legend-box' class="control-box">
+            <div class='noise-legend'>
+                <div class='legend-title'>Noise Level</div>
+                <div class='legend-scale'>
+                    <ul class='legend-labels'>
+                        <li><span style='background:#feedde;'></span>0 dB</li>
+                        <li><span style='background:#fdbe85;'></span>20 dB</li>
+                        <li><span style='background:#fd8d3c;'></span>40 dB</li>
+                        <li><span style='background:#e6550d;'></span>60 dB</li>
+                        <li><span style='background:#a63603;'></span>80 dB</li>
+                    </ul>
                 </div>
             </div>
-            <div id="about-box" class="control-box">
-                <h1>City Noise Mapping</h1>
-                <p>
-                This city noise mapping demonstrator, generated from road
-                network data is visualised using a Google Maps solution. You can
-                pan and zoom around the map, click on the map for the noise
-                level values and change the heat map opacity.
-                </p>
-                <p>
-                    <a href="#" id="moreinfo">Click here for more information.</a>
-                </p>
-                <div>
-                    <span id="transparency-label">Opacity: <span
-                            id="transparency-value">50</span></span><br>
-                    <input id="transparency-check" type="checkbox" checked>
-                    <input id="transparency-slider" type="text"
-                    data-slider-min="0" data-slider-max="100"
-                    data-slider-step="1" data-slider-value="50"</input>
-                </div>
+        </div>
+        <div id="about-box" class="control-box">
+            <h1>City Noise Mapping</h1>
+            <p>
+            This city noise mapping demonstrator, generated from road
+            network data is visualised using a Google Maps solution. You can
+            pan and zoom around the map, click on the map for the noise
+            level values and change the heat map opacity.
+            </p>
+            <p>
+                <a href="#" id="moreinfo">Click here for more information.</a>
+            </p>
+            <div>
+                <span id="transparency-label">Opacity: <span
+                        id="transparency-value">50</span></span><br>
+                <input id="transparency-check" type="checkbox" checked>
+                <input id="transparency-slider" type="text"
+                data-slider-min="0" data-slider-max="100"
+                data-slider-step="1" data-slider-value="50"</input>
             </div>
-            <div id="map-canvas"></div>
-            <script src="js/disclaimer.js"></script>
-        </body>
-    </html>
+        </div>
+        <div id="map-canvas"></div>
+        <script src="js/disclaimer.js"></script>
+    </body>
+</html>

@@ -25,9 +25,11 @@ function initialise() {
     });
     $('#transparency-check').change(function() {
         if (this.checked) {
+            ga('send', 'event', 'checkbox', 'check');
             layers['layer-raster'].setMap(map);
             layers['layer-info'].setMap(map);
         }else{
+            ga('send', 'event', 'checkbox', 'uncheck');
             layers['layer-raster'].setMap(null);
             layers['layer-info'].setMap(null);
         }
