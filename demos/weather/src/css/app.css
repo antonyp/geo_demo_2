@@ -1,0 +1,64 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#map-canvas {
+    height: 100%;
+}
+.info-popup h4 {
+    text-align: center;
+    font-weight: bold;
+}
+/* properties table */
+
+.info-popup .key {
+    font-weight: bold;
+}
+.info-popup .key:after {
+    content: ": ";
+}
+.info-popup {
+    overflow: hidden;
+}
+.fa-phone {
+    font-weight: bold;
+}
+.info-popup .infolinks {
+    text-align: center;
+}
+#zoomto {
+    font-size: 130%;
+}
+.claim-amount {
+    font-weight: bold;
+    color: green;
+}
+#logo {
+    z-index: 10;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+}
+#layer-panel {
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    z-index: 5;
+    background-color: white;
+    padding: 4px;
+}
+
+.labels {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid black;
+    padding: 3px;
+    white-space: nowrap;
+}

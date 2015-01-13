@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+      
+    <!-- stylesheet templates -->
+    <link rel="stylesheet" href="/javascript/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/javascript/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/javascript/fonts-font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="lib/datepicker/css/datepicker3.css" />
+      
+    <!-- application stylesheet -->
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- google map application stylesheet -->
+    <link rel="stylesheet" href="css/maps-googlestyle.css">
+     
+    <!-- JavaScript libraries -->
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?v=3.exp&client=gme-optimationcloudservices&sensor=false&libraries=places">
+    </script>
+    <script src="/javascript/jquery/jquery.min.js"></script>
+    <script src="/javascript/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/mustache.js"></script>
+    <script src="lib/moment.min.js"></script>
+    <script src="lib/numeral.min.js"></script>
+    <script src="lib/Chart.min.js"></script>
+    <script src="lib/google.maps.Polygon.getBounds.js"></script>
+    <script src="lib/markerwithlabel.js"></script>
+    <script src="lib/chroma.min.js"></script>
+    <script src="lib/datepicker/js/bootstrap-datepicker.js"></script>
+    <!--<script src="lib/OverlappingMarkerSpiderfier.js"></script>-->
+
+    <!-- application Javascript -->
+    <script src="js/templateStrings.js"></script>
+    <script src="js/map.js"></script>
+  </head>
+  <body>
+    <input id="pac-input" class="controls" type="text" placeholder="Place Search...">
+    <img id="logo" src="img/optimation-logo.gif">
+    <div id="layer-panel">
+      <input type="checkbox" class="checkbox_style" id="layer_readings" onClick="toggleGMELayer(0)"><label for="layer_urp" class="checkbox_label"> Readings</label><br>
+      <input type="checkbox" class="checkbox_style" id="layer_radar" onClick="toggleGMELayer(1)"><label for="layer_parcels" class="checkbox_label"> Radar</label><br>
+    </div>
+    <div id="map-canvas"/>
+  </body>
+</html>
