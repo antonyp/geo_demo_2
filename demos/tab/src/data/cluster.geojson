@@ -1,0 +1,2086 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2014-10-13T22:55:01Z",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "node/281145522",
+      "properties": {
+        "@id": "node/281145522",
+        "addr:city": "Wellington",
+        "addr:housenumber": "17",
+        "addr:street": "Adelaide Road",
+        "amenity": "hospital",
+        "name": "Accident and Urgent Medical Centre",
+        "opening_hours": "24/7",
+        "phone": "04 3844944",
+        "website": "http://www.wamc.co.nz/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7798775,
+          -41.3019041
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/307631495",
+      "properties": {
+        "@id": "node/307631495",
+        "amenity": "hospital",
+        "name": "Darfield Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.1181041,
+          -43.4871938
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/347462875",
+      "properties": {
+        "@id": "node/347462875",
+        "amenity": "hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          171.2567344,
+          -44.4082888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/373653089",
+      "properties": {
+        "@id": "node/373653089",
+        "amenity": "hospital",
+        "emergency": "no",
+        "name": "Rangiora Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.5908872,
+          -43.2897509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/663225146",
+      "properties": {
+        "@id": "node/663225146",
+        "amenity": "hospital",
+        "name": "Ngaio Medical Centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.774886,
+          -41.2474039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/843479012",
+      "properties": {
+        "@id": "node/843479012",
+        "amenity": "hospital",
+        "name": "Medical Centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.466971,
+          -36.2432879
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/885821767",
+      "properties": {
+        "@id": "node/885821767",
+        "amenity": "hospital",
+        "name": "Northaven Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6969909,
+          -36.6114292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/966611096",
+      "properties": {
+        "@id": "node/966611096",
+        "amenity": "hospital",
+        "name": "Waiuku Health Plus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7256509,
+          -37.2525376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/976303441",
+      "properties": {
+        "@id": "node/976303441",
+        "amenity": "hospital",
+        "linz:garmin_type": "0x3002",
+        "name": "Gore Hospital",
+        "source": "LINZ & NZ Open GIS"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          168.94157,
+          -46.11339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/983189945",
+      "properties": {
+        "@id": "node/983189945",
+        "amenity": "hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6729183,
+          -36.5907172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1007092889",
+      "properties": {
+        "@id": "node/1007092889",
+        "amenity": "hospital",
+        "name": "Totara Lodge South Auckland Hospice"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.9168049,
+          -37.003748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1010566516",
+      "properties": {
+        "@id": "node/1010566516",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "name": "Shore Care Accident and Medical"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7271176,
+          -36.7092059
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1021404947",
+      "properties": {
+        "@id": "node/1021404947",
+        "amenity": "hospital",
+        "name": "Saint Christopher Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8620121,
+          -36.9760628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1061414424",
+      "properties": {
+        "@id": "node/1061414424",
+        "amenity": "hospital",
+        "name": "Bethesda Home and Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8835297,
+          -36.997602
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1061414544",
+      "properties": {
+        "@id": "node/1061414544",
+        "amenity": "hospital",
+        "name": "Hayman Home and Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8814178,
+          -37.0027293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1068401617",
+      "properties": {
+        "@id": "node/1068401617",
+        "amenity": "hospital",
+        "emergency": "no",
+        "name": "Papatoetoe Private Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.855853,
+          -36.9832353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1105901054",
+      "properties": {
+        "@id": "node/1105901054",
+        "amenity": "hospital",
+        "name": "Birthright"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7825036,
+          -36.8735457
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225183319",
+      "properties": {
+        "@id": "node/1225183319",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "1.5",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.7027615,
+          -36.8271644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225184257",
+      "properties": {
+        "@id": "node/1225184257",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "0.6",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.1550314,
+          -40.7534334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225186362",
+      "properties": {
+        "@id": "node/1225186362",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "5.0",
+        "LINZ:y_offset": "1.0",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.9474721,
+          -37.0615295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225187167",
+      "properties": {
+        "@id": "node/1225187167",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "2.0",
+        "LINZ:x_offset": "2.0",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "emergency": "yes",
+        "name": "North Shore Hospital",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7573714,
+          -36.7812966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225189307",
+      "properties": {
+        "@id": "node/1225189307",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "0.188348",
+        "LINZ:y_offset": "1.413089",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.1178461,
+          -43.4872603
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225190338",
+      "properties": {
+        "@id": "node/1225190338",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "1.3",
+        "LINZ:y_offset": "-0.6",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.0991506,
+          -38.6988816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225191256",
+      "properties": {
+        "@id": "node/1225191256",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "0.743815",
+        "LINZ:y_offset": "1.3",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.8169493,
+          -40.8782788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225194155",
+      "properties": {
+        "@id": "node/1225194155",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "9.0",
+        "LINZ:x_offset": "-2.0",
+        "LINZ:y_offset": "2.0",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          171.1926182,
+          -42.463558
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225207439",
+      "properties": {
+        "@id": "node/1225207439",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "7.0",
+        "LINZ:x_offset": "-2.0",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          173.5065847,
+          -35.4079544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225211380",
+      "properties": {
+        "@id": "node/1225211380",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "-2.415",
+        "LINZ:y_offset": "-2.47246",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.2521684,
+          -38.8897369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225221422",
+      "properties": {
+        "@id": "node/1225221422",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "-1.68603",
+        "LINZ:y_offset": "1.3",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.9201547,
+          -36.9016386
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225230362",
+      "properties": {
+        "@id": "node/1225230362",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "-6.0",
+        "LINZ:y_offset": "2.0",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          168.0234886,
+          -46.3417401
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225235715",
+      "properties": {
+        "@id": "node/1225235715",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "-2.5",
+        "LINZ:y_offset": "1.0",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          169.1807666,
+          -45.0373929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225238516",
+      "properties": {
+        "@id": "node/1225238516",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "0.603352",
+        "LINZ:y_offset": "-0.57781",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.3694085,
+          -35.7604861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225240552",
+      "properties": {
+        "@id": "node/1225240552",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "9.0",
+        "LINZ:x_offset": "-1.0",
+        "LINZ:y_offset": "-2.0",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          168.3576193,
+          -46.4396828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225243814",
+      "properties": {
+        "@id": "node/1225243814",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "0.5",
+        "LINZ:y_offset": "-1.0",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7875935,
+          -36.828936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225243978",
+      "properties": {
+        "@id": "node/1225243978",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "1.0",
+        "LINZ:y_offset": "1.5",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.8256796,
+          -39.6286239
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225244077",
+      "properties": {
+        "@id": "node/1225244077",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "-6.5",
+        "LINZ:y_offset": "0.973663",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "name": "Te Puia Springs Hospital",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          178.3049796,
+          -38.0554199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225245940",
+      "properties": {
+        "@id": "node/1225245940",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "2.4",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.4889711,
+          -43.6351977
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225248423",
+      "properties": {
+        "@id": "node/1225248423",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "2.0",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.2636395,
+          -38.0184291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225249115",
+      "properties": {
+        "@id": "node/1225249115",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "2.0",
+        "LINZ:y_offset": "0.5",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          170.1108403,
+          -45.1286034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225249590",
+      "properties": {
+        "@id": "node/1225249590",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "1.3",
+        "LINZ:y_offset": "0.5",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "emergency": "no",
+        "name": "Bowen Hospital",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7671981,
+          -41.2593925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225250003",
+      "properties": {
+        "@id": "node/1225250003",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "-6.43894",
+        "LINZ:y_offset": "-1.0",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "name": "Forensic Community Team",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.5893342,
+          -43.5486781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225257748",
+      "properties": {
+        "@id": "node/1225257748",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "0.533121",
+        "LINZ:y_offset": "-1.08858",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "emergency": "no",
+        "name": "Atawhai Assisi Home & Hospital",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.3469993,
+          -37.8049395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225258484",
+      "properties": {
+        "@id": "node/1225258484",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "-5.5",
+        "LINZ:y_offset": "0.786911",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8533159,
+          -36.9076687
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225259832",
+      "properties": {
+        "@id": "node/1225259832",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "0.6",
+        "LINZ:y_offset": "-0.6",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.1925615,
+          -43.3027734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225261177",
+      "properties": {
+        "@id": "node/1225261177",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "7.0",
+        "LINZ:x_offset": "-1.0",
+        "LINZ:y_offset": "-0.5",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          168.3838509,
+          -46.4244128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225270565",
+      "properties": {
+        "@id": "node/1225270565",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "4.0",
+        "LINZ:x_offset": "3.0",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "name": "McKenzie Hospital",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          171.2491685,
+          -44.0827378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225270732",
+      "properties": {
+        "@id": "node/1225270732",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "7.0",
+        "LINZ:y_offset": "1.0",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          167.6895238,
+          -46.1276114
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225278188",
+      "properties": {
+        "@id": "node/1225278188",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "-4.0",
+        "LINZ:y_offset": "0.739026",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.8260911,
+          -42.5245422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225285485",
+      "properties": {
+        "@id": "node/1225285485",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "1.126895",
+        "LINZ:y_offset": "-1.12689",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.5172927,
+          -37.6451966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225288929",
+      "properties": {
+        "@id": "node/1225288929",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "-5.76376",
+        "LINZ:y_offset": "-0.47087",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6977547,
+          -36.8674168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225290756",
+      "properties": {
+        "@id": "node/1225290756",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "1.4",
+        "LINZ:y_offset": "-1.2",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8103282,
+          -36.9605818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225293979",
+      "properties": {
+        "@id": "node/1225293979",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "7.0",
+        "LINZ:x_offset": "-0.6",
+        "LINZ:y_offset": "1.0",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          173.2727314,
+          -41.2873629
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225294995",
+      "properties": {
+        "@id": "node/1225294995",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "0.507582",
+        "LINZ:y_offset": "0.817239",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.7788599,
+          -37.8086137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225297288",
+      "properties": {
+        "@id": "node/1225297288",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "7.0",
+        "LINZ:x_offset": "-0.6",
+        "LINZ:y_offset": "-0.6",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          168.4459271,
+          -45.7357432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225298772",
+      "properties": {
+        "@id": "node/1225298772",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "1.0",
+        "LINZ:y_offset": "0.5",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          171.6071598,
+          -41.7504223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225301604",
+      "properties": {
+        "@id": "node/1225301604",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "-2.805746",
+        "LINZ:y_offset": "-2.2",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          171.8601751,
+          -42.1191348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225304573",
+      "properties": {
+        "@id": "node/1225304573",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "9.0",
+        "LINZ:y_offset": "-1.0",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.5908978,
+          -43.2898202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225308879",
+      "properties": {
+        "@id": "node/1225308879",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "7.0",
+        "LINZ:x_offset": "-1.0",
+        "LINZ:y_offset": "-3.0",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          170.4726658,
+          -45.8591779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225313859",
+      "properties": {
+        "@id": "node/1225313859",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "0.2",
+        "LINZ:y_offset": "0.7",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8593481,
+          -36.8616471
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225314525",
+      "properties": {
+        "@id": "node/1225314525",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "-3.80526",
+        "LINZ:y_offset": "-1.67278",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.6878375,
+          -42.9682305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225316728",
+      "properties": {
+        "@id": "node/1225316728",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "2.0",
+        "LINZ:x_offset": "8.0",
+        "LINZ:y_offset": "-2.0",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "name": "Tokanui Hospital",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.3252182,
+          -38.0662454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225316812",
+      "properties": {
+        "@id": "node/1225316812",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "-6.0",
+        "LINZ:y_offset": "-2.0",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          171.2363019,
+          -44.0954155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225317621",
+      "properties": {
+        "@id": "node/1225317621",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "5.0",
+        "LINZ:y_offset": "-2.0",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "emergency": "no",
+        "name": "Mossbrae Hospital",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          170.3476636,
+          -45.8828553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225324839",
+      "properties": {
+        "@id": "node/1225324839",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "2.0",
+        "LINZ:y_offset": "0.3",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          173.1998822,
+          -41.3409126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225325492",
+      "properties": {
+        "@id": "node/1225325492",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "-5.8",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          168.9415773,
+          -46.1129287
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225345109",
+      "properties": {
+        "@id": "node/1225345109",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "-5.4",
+        "LINZ:y_offset": "-0.5",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.244483,
+          -36.101747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225347445",
+      "properties": {
+        "@id": "node/1225347445",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "7.0",
+        "LINZ:x_offset": "-1.0",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.7952544,
+          -39.6805288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1225351632",
+      "properties": {
+        "@id": "node/1225351632",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "-2.0",
+        "LINZ:y_offset": "1.0",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.0075152,
+          -40.9101616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1302906872",
+      "properties": {
+        "@id": "node/1302906872",
+        "amenity": "hospital",
+        "name": "Nile Road Medical Centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7503105,
+          -36.7791696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1313812401",
+      "properties": {
+        "@id": "node/1313812401",
+        "amenity": "hospital",
+        "name": "Mercy Radiology"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6143903,
+          -36.82038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1426044312",
+      "properties": {
+        "@id": "node/1426044312",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "name": "Wanaka Lakes Health Centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          169.1373382,
+          -44.7091338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1448680924",
+      "properties": {
+        "@id": "node/1448680924",
+        "amenity": "hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8421492,
+          -36.9293774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1564687773",
+      "properties": {
+        "@id": "node/1564687773",
+        "amenity": "hospital",
+        "name": "Kaikoura Hospital and Medical Centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          173.6811144,
+          -42.4048833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1731477981",
+      "properties": {
+        "@id": "node/1731477981",
+        "amenity": "hospital",
+        "name": "Opotiki Health Centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.2859686,
+          -38.0067345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1734793268",
+      "properties": {
+        "@id": "node/1734793268",
+        "amenity": "hospital",
+        "designation": "General Practice",
+        "emergency": "no",
+        "name": "Manly Medical Centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.762964,
+          -36.6312823
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1946741754",
+      "properties": {
+        "@id": "node/1946741754",
+        "amenity": "hospital",
+        "name": "Mercy Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          170.4991387,
+          -45.8611073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1970993619",
+      "properties": {
+        "@id": "node/1970993619",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "name": "White Cross Lunn Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.8308414,
+          -36.8884734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2172305323",
+      "properties": {
+        "@id": "node/2172305323",
+        "addr:full": "57-59 High Street Leeston",
+        "amenity": "hospital",
+        "contact:fax": "03 3243 012",
+        "contact:phone": "03 3243 850",
+        "designation": "Medical Centre",
+        "emergency": "no",
+        "name": "Leeston Medical Centre",
+        "source": "Local Knowledge",
+        "website": "http://www.leestonmc.co.nz/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.2994291,
+          -43.7614692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2398919573",
+      "properties": {
+        "@id": "node/2398919573",
+        "amenity": "hospital",
+        "designation": "Resthome",
+        "emergency": "no",
+        "name": "Taieri Court Resthome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          170.3469787,
+          -45.871971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2432163670",
+      "properties": {
+        "@id": "node/2432163670",
+        "LINZ:layer": "descrip_text",
+        "LINZ:point_size": "6.0",
+        "LINZ:size": "4.1",
+        "LINZ:source_version": "V16",
+        "LINZ:text_placement_justification": "1.0",
+        "LINZ:x_offset": "0.304868",
+        "LINZ:y_offset": "0.7502",
+        "amenity": "hospital",
+        "attribution": "http://wiki.osm.org/wiki/Attribution#LINZ",
+        "source_ref": "http://www.linz.govt.nz/topography/topo-maps/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          169.3304686,
+          -45.200517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2453640940",
+      "properties": {
+        "@id": "node/2453640940",
+        "amenity": "hospital",
+        "emergency": "no",
+        "name": "Medical Centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.4958024,
+          -37.2746366
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2588672799",
+      "properties": {
+        "@id": "node/2588672799",
+        "amenity": "hospital",
+        "name": "St John first aid"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          169.3141906,
+          -45.5434885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2596445267",
+      "properties": {
+        "@id": "node/2596445267",
+        "amenity": "hospital",
+        "name": "Silverdale Medical and Surgical"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.6846313,
+          -36.6134304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2611965013",
+      "properties": {
+        "@id": "node/2611965013",
+        "amenity": "hospital",
+        "name": "New Zealand Blood Service"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7737184,
+          -36.7912546
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2611965018",
+      "properties": {
+        "@id": "node/2611965018",
+        "amenity": "hospital",
+        "name": "New Zealand Blood Service"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7837886,
+          -36.8817141
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2699333021",
+      "properties": {
+        "@id": "node/2699333021",
+        "addr:city": "Christchurch",
+        "addr:housenumber": "164",
+        "addr:postcode": "8083",
+        "addr:street": "Queenspark Drive",
+        "amenity": "hospital",
+        "name": "Queenspark Healthcare",
+        "note": "This is not technically a hospital but a General Practitioner's(GP's) office.",
+        "phone": "+064 3 383 1444"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.6959984,
+          -43.4778368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2715895448",
+      "properties": {
+        "@id": "node/2715895448",
+        "amenity": "hospital",
+        "name": "Outpatients"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7790363,
+          -41.3084919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2715895536",
+      "properties": {
+        "@id": "node/2715895536",
+        "amenity": "hospital",
+        "name": "Outpatient Clinic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7800756,
+          -41.3100755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2740957981",
+      "properties": {
+        "@id": "node/2740957981",
+        "addr:city": "Christchurch",
+        "addr:housenumber": "52",
+        "addr:postcode": "8014",
+        "addr:street": "Browns Road",
+        "amenity": "hospital",
+        "name": "Silverdale Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.6253903,
+          -43.5084605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2740957986",
+      "properties": {
+        "@id": "node/2740957986",
+        "addr:city": "Christchurch",
+        "addr:housenumber": "24",
+        "addr:postcode": "8014",
+        "addr:street": "McDougall Avenue",
+        "amenity": "hospital",
+        "name": "Nure Maude"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.6224273,
+          -43.5105693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2740957987",
+      "properties": {
+        "@id": "node/2740957987",
+        "addr:city": "Christchurch",
+        "addr:housenumber": "249",
+        "addr:postcode": "8140",
+        "addr:street": "Papanui Road",
+        "amenity": "hospital",
+        "name": "St George's Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.61816,
+          -43.5107722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2740957990",
+      "properties": {
+        "@id": "node/2740957990",
+        "addr:city": "Christchurch",
+        "addr:housenumber": "10",
+        "addr:postcode": "8052",
+        "addr:street": "St Winifreds Place",
+        "amenity": "hospital",
+        "name": "Radius St Winifreds Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.5960616,
+          -43.5085362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2740957995",
+      "properties": {
+        "@id": "node/2740957995",
+        "addr:city": "Christchurch",
+        "addr:housenumber": "288",
+        "addr:postcode": "8062",
+        "addr:street": "Woodham Road",
+        "amenity": "hospital",
+        "name": "Rosewood Rest Home & Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.6806349,
+          -43.5253525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2740958000",
+      "properties": {
+        "@id": "node/2740958000",
+        "addr:city": "Christchurch",
+        "addr:housenumber": "440",
+        "addr:postcode": "8013",
+        "addr:street": "Montreal Street",
+        "amenity": "hospital",
+        "name": "Lyndhurst Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.6307952,
+          -43.5212448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2740981710",
+      "properties": {
+        "@id": "node/2740981710",
+        "addr:city": "Christchurch",
+        "addr:housenumber": "132",
+        "addr:postcode": "8013",
+        "addr:street": "Peterborough Street",
+        "amenity": "hospital",
+        "emergency": "no",
+        "name": "Forte Health",
+        "phone": "+64 3 365 8333",
+        "website": "http://www.fortehealth.co.nz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.6378002,
+          -43.5263061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2741029672",
+      "properties": {
+        "@id": "node/2741029672",
+        "amenity": "hospital",
+        "name": "Regional Forensic Psychiatric Service"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.5875597,
+          -43.5471981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2741029674",
+      "properties": {
+        "@id": "node/2741029674",
+        "amenity": "hospital",
+        "name": "Te Whare Mauri Ora"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.5896502,
+          -43.5468751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2741029676",
+      "properties": {
+        "@id": "node/2741029676",
+        "addr:city": "Christchurch",
+        "addr:postcode": "8024",
+        "addr:street": "Linden Grove Avenue",
+        "amenity": "hospital",
+        "name": "Youth Specialty Services"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.5955491,
+          -43.549189
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2793857846",
+      "properties": {
+        "@id": "node/2793857846",
+        "addr:city": "Christchurch",
+        "addr:housenumber": "10",
+        "addr:postcode": "8024",
+        "addr:street": "Athelstan Street",
+        "amenity": "hospital",
+        "emergency": "no",
+        "name": "Barrington Physiotherapy Clinic, University of Otago",
+        "phone": "+64 3 332 2627",
+        "website": "http://www.otago.ac.nz/physio-clinic/christchurch/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.6199754,
+          -43.5572839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2810317253",
+      "properties": {
+        "@id": "node/2810317253",
+        "amenity": "hospital",
+        "emergency": "no",
+        "name": "Rolleston Medical Centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.3753897,
+          -43.5945882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2909911890",
+      "properties": {
+        "@id": "node/2909911890",
+        "amenity": "hospital",
+        "name": "Hamilton Radiology - Rototuna Branch"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.274785,
+          -37.729418
+        ]
+      }
+    }
+  ]
+}
