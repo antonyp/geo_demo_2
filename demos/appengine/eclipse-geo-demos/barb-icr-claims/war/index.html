@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+      
+    <!-- stylesheet templates -->
+    <link rel="stylesheet" href="/javascript/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/javascript/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/javascript/fonts-font-awesome/css/font-awesome.min.css" />
+      
+    <!-- application stylesheet -->
+    <link rel="stylesheet" href="css/app.css">
+     
+    <!-- JavaScript libraries -->
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?client=gme-optimationcloudservices&sensor=false&libraries=places,visualization">
+    </script>
+    <script src="/javascript/jquery/jquery.min.js"></script>
+    <script src="/javascript/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/mustache.js"></script>
+    <script src="lib/moment.min.js"></script>
+    <script src="lib/numeral.min.js"></script>
+
+    <!-- application Javascript -->
+    <script src="js/popupTemplate.js"></script>
+    <script src="js/map.js"></script>
+  </head>
+  <body>
+    <div id="panel">
+      <button id="toggleHeatmap" type="button" class="btn btn-default btn-sm" onclick="toggleHeatmap()">Toggle Heatmap</button>
+    </div>
+    <input id="pac-input" class="controls" type="text" placeholder="Place Search...">
+    <img id="barbador-logo" class="logo" src="img/barbador-logo.png">
+    <img id="optimation-logo" class="logo" src="img/optimation-logo.gif"/>
+    <div id="map-canvas"/>
+  </body>
+</html>
