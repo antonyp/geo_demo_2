@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+    <link type="text/css" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700"
+    rel="stylesheet" type="text/css">
+      
+    <!-- google map application stylesheet -->
+    <link rel="stylesheet" href="css/maps-googlestyle.css">
+
+    <!-- application stylesheet -->
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet"
+    href="lib/ui-lightness/jquery-ui-1.10.4.custom.min.css">
+     
+    <link rel="stylesheet" href="lib/colorbrewer.css">
+
+    <link rel="stylesheet" href="/javascript/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/javascript/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+
+    <!--<link rel="stylesheet" href="lib/flat-ui/css/flat-ui.css">-->
+
+    <!-- JavaScript libraries -->
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?v=3.exp&client=gme-optimationcloudservices&sensor=false&libraries=places,visualization">
+    </script>
+
+    <script src="lib/arcgislink.js"></script>
+
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="/javascript/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="lib/jquery-ui.custom.min.js"></script>
+
+    <script src="lib/mustache.js"></script>
+    <script src="lib/colorbrewer.v1.min.js"></script>
+    <script src="lib/chroma.min.js"></script>
+    <script src="lib/chance.min.js"></script>
+    <script src="lib/Chart.min.js"></script>
+
+    <!-- application Javascript -->
+    <script src="js/templateStrings.js"></script>
+    <script src="js/mapStyles.js"></script>
+  </head>
+  <body>
+    <div id="layer-toggle" class="control-box">
+        <h4>Market</h4>
+        <p>
+        <input type="checkbox" id="layer-market-penetration"/>
+        <label for="layer-market-penetration"><i class="fa fa-users"></i>Market Penetration</label>
+        </p>
+
+        <h4>Stores
+            <a id="distance-control" class="btn" href="#" style="padding: 0px 0px">
+                <!--    <i class="fa fa-location-arrow fa-lg"></i>-->
+            <span id="distance-control" class="fa-stack">
+                <i class="fa fa-square fa-stack-1x fa-lg"></i>
+                <i class="fa fa-location-arrow fa-stack-1x fa-inverse"></i>
+            </span>
+            </a>
+            <!--
+            <span id="distance-control" class="fa-stack">
+                <i class="fa fa-square fa-stack-1x fa-lg"></i>
+                <i class="fa fa-location-arrow fa-stack-1x fa-inverse"></i>
+            </span>
+            -->
+        </h4>
+        <p>
+        <input type="checkbox" id="layer-primary-stores"/>
+        <label for="layer-primary-stores"><i class="fa fa-building-o"></i>Primary Stores</label>
+        <br>
+        <input type="checkbox" id="layer-secondary-stores"/>
+        <label for="layer-secondary-stores"><i class="fa fa-shopping-cart"></i>Secondary Stores</label>
+        </p>
+
+        <h4>Territories</h4>
+        <p>
+        <input type="checkbox" id="layer-sales-territories"/>
+        <label for="layer-sales-territories"><i class="fa fa-dollar"></i>Sales Territories</label>
+        </p>
+
+        <h4>Demographics</h4>
+        <p>
+        <input type="checkbox" id="layer-median-population"/>
+        <label for="layer-median-population"><i class="fa fa-user"></i>2013 Median
+            Population</label>
+        <br>
+        <input type="checkbox" id="layer-population-by-age"/>
+        <label for="layer-population-by-age"><i class="fa fa-tasks"></i>2013 Population by Age</label>
+        <br>
+        <div id="population-range-slider"></div>
+        <span id="population-range" style="border:0; color: #f6931f;
+            font-weight:bold;"></span>
+        </p>
+
+        <h4>Base Maps</h4>
+        <p>
+        <input type="checkbox" id="layer-chch-postquake"/>
+        <label for="layer-chch-postquake">Post Earthquake Imagery</label>
+        <br>
+        <input type="checkbox" id="layer-chch-topo"/>
+        <label for="layer-chch-topo">Topographic Basemap</label>
+        <br>
+    </div>
+    <img id="optimation-logo" class="logo" src="img/optimation-logo.gif"/>
+    <div id="map-canvas"></div>
+    <script src="js/map.js"></script>
+    <!--<script src="lib/flat-ui/js/flatui-radio.js"></script>-->
+  </body>
+</html>
